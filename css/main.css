@@ -164,7 +164,7 @@ legend {
 }
 
 label {
-  /*maybe something here to style the labels only*?
+  /*maybe something here to style the labels only?*/
 }
 
 /* 
@@ -204,7 +204,6 @@ label {
 
 /* STYLING FOR GALLERY */
 .img {
-  /*margin: 10px;*/
   margin: 1px;
   border: 3px solid #EF4B6D;
   display: inline-block;
