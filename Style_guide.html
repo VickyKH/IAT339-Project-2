@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>P01 - Style Guide Template</title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/Web_Grid_Structure.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <h1>P01 - Style Guide Template</h1>
+
+    <p>A template you can use to start building out your own style guides with.</p>
+
+
+    <nav>
+      
+      <p>
+        On this page:
+      </p>
+      <ul>
+        <li>
+          <a href="#interactive_elements">Interactive Elements</a>
+        </li>
+        <li>
+          <a href="#text_elements">Text Elements</a>
+        </li>
+        <li>
+          <a href="#combined_elements">Combined Elements</a>
+        </li>
+      </ul>
+
+      <p>Other pages:</p>
+      <ul>
+        <li><a href="User-flows.html">User-flows</a>
+        <li><a href="Style_guide.html">Style Guide</a>
+        <li><a href="Citations.html">Citations</a>
+      </ul>
+
+    </nav>
+
+
+ 
+    <!-- INTERACTIVE ELEMENTS SECTION // -->
+    <section id="interactive_elements">
+    <h2>INTERACTIVE ELEMENTS</h2>
+      <!-- Default Button styling section -->
+      <section>
+
+        <h2>Navigation Button</h2>
+
+        <h3>CSS selector:</h3>
+          <ul>
+            <li>.button-nav-group</li>
+            <li>.button-nav</li>
+          </ul>
+
+        <h3>Sample code:</h3>
+          <code>&lt;ul class="button-nav-group"&gt;</code>
+          <code>&lt;a href="#" class="button-nav"&gt;About&lt;/a&gt;</code>
+          <code>&lt;/ul&gt;</code>
+
+        <h3>Rendered element:</h3>
+          <ul class="button-nav-group">
+            <li><a class="button-nav" href="#">About</a></li>
+            <li><a class="button-nav" href="#">Donuts</a></li>
+            <li><a class="button-nav" href="#">Suggest</a></li>
+          </ul>
+
+      </section>
+
+      <!-- IN-TEXT LINK SECTION -->
+      <section>
+        <h2>In-text link</h2>
+
+        <h3>CSS selector:</h3>
+          <ul>
+            <li>.styled-para</li>
+            <li>.in-text-link</li>
+          </ul>
+
+        <h3>Sample code:</h3>
+          <code>&lt;p class="styled-para"&gt;...&lt;a href="#" class="in-text-link"&gt;kawaii-punked edge&lt;/a&gt;&lt;/p&gt;</code>
+
+        <h3>Rendered element:</h3>
+          <p class="styled-para">As a person, this company is the coolest kid on the block. They sport the latest fashions and know where all the cool kids hang out. Everybody wants to be their friends. They look sweet and innocent on the outside, but once you get to know them, you will be flip-flopped by their <a class="in-text-link" href="#">kawaii-punked edge.</a></p>
+      </section>
+
+      <!-- SUBMIT/RESET BUTTON SECTION -->
+      <section>
+        <h2>Submit/Reset Buttons</h2>
+
+        <h3>CSS selector:</h3>
+          <ul>
+            <li>.button-nav-group</li>
+            <li>.button-nav</li>
+          </ul>
+
+        <h3>Sample code:</h3>
+          <code>&lt;ul class="button-nav-group"&gt;</code>
+          <code>&lt;li&gt;&lt;a class="button-nav" href="#"&gt;&lt;span&gt;Submit &lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</code>
+          <code>&lt;/ul&gt;</code>
+
+        <h3>Rendered element</h3>
+          <ul class="button-nav-group">
+            <li><a class="button-nav" href="#"><span>Submit </span></a></li>
+            <li><a class="button-nav" href="#"><span>Reset </span></a></li>
+          </ul>
+      </section>
+      
+      <!-- TEXT INPUT FIELD SECTION -->  
+      <section>
+        <h2>Text Input Field</h2>
+
+        <h3>CSS selector:</h3>
+
+          <ul>
+            <li>form</li>
+            <li>.button-nav</li>
+          </ul>
+
+        <h3>Sample code:</h3>
+          
+          <code>&lt;form method="post" action="#"&gt;</code>
+          <code>&lt;label for="form-firstName"&gt;First Name:&lt;br&gt;&lt;/label&gt;</code>
+          <code>&lt;input type="text" id="form-firstName" placeholder="First Name"&gt;</code>
+          <code>&lt;/form&gt;</code>
+
+        <h3>Rendered element</h3>
+
+          <form method="post" action="#">
+
+            <label for="form-firstName">First Name:<br></label>
+            <input type="text" id="form-firstName" placeholder="First Name">
+
+            <label for="form-lastName"><br>Last Name:<br></label>
+            <input type="text" id="form-lastName" placeholder="Last Name">
+
+            <label for="form-suggest"><br>Donut Suggestion:<br></label>
+            <textarea id="form-suggest" placeholder="Type any details about your awesome donut here"></textarea>
+
+            <br>
+            <input class="button-nav" type="submit" value="Submit Suggestion">
+
+          </form>
+
+      </section>
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section id="text_elements">
+    <h2>TEXT ELEMENTS</h2>
+    <!-- HEADINGS SECTION -->
+      <section>
+        <h2>Headings</h2>
+
+        <h3>CSS selector:</h3>
+
+          <ul>
+            <li>.styled-h3</li>
+            <li>.styled-h4</li>
+            <li>.styled-h5</li>
+          </ul>
+
+        <h3>Sample code:</h3>
+
+          <code>&lt;h3 class="styled-h3"&gt;Dirty Mouth  (Heading 1)&lt;/h3&gt;</code>
+
+        <h3>Rendered element:</h3>
+
+          <h3 class="styled-h3">Dirty Mouth  (Heading 1)</h3>
+          <h4 class="styled-h4">Donuts  (Heading 2)</h4>
+          <h5 class="styled-h5">Cute as Hell  (Heading 3)</h5>
+
+      </section>
+
+<!-- PARAGRAPH SECTION -->
+      <section>
+        <h2>Paragraphs</h2>
+
+        <h3>CSS selector:</h3>
+
+          <ul>
+            <li>.styled-h3</li>
+            <li>.styled-h4</li>
+            <li>.styled-h5</li>
+          </ul>
+
+        <h3>Sample code:</h3>
+
+          <code>&lt;&gt;</code>
+
+        <h3>Rendered element:</h3>
+
+          <h4 class="styled-h4">Why might this company entice someone to purchase product?</h4>
+          <p class="styled-para">This company would be enticing to potential customers because of their cutesy yet edgy branding. Customers would feel like they have entered into the most hip and current donut shop on the block. Customers can expect a plethora of flavors from unique crazy concoctions to the quintessential oldies. They offer only quality handcrafted donuts with kickass names. </p>
+
+      </section>
+
+<!-- BULLETED LIST SECTION -->
+      <section>
+        <h2>Bulleted Lists</h2>
+
+        <h3>CSS selector:</h3>
+
+          <ul>
+            <li>.bullet</li>
+          </ul>
+
+        <h3>Sample code:</h3>
+
+          <code>&lt;ul class="bullet"&gt;</code>
+          <code>&lt;li&gt;Sprinkled Donut&lt;li&gt;</code>
+          <code>&lt;ul&gt;</code>
+
+        <h3>Rendered element:</h3>
+
+          <ul class="bullet">
+            <li>Sprinkled Donut</li>
+            <li>Jelly Donut</li>
+            <li>Old Fashioned Donut</li>
+          </ul>
+
+      </section>
+
+<!-- NUMBERED LISTS SECTION -->
+      <section>
+        <h2>Numbered Lists</h2>
+
+        <h3>CSS selector:</h3>
+
+          <ul>
+            <li>.bullet</li>
+          </ul>
+
+        <h3>Sample code:</h3>
+
+          <code>&lt;ol class="bullet"&gt;</code>
+          <code>&lt;li&gt;Sprinkled Donut&lt;li&gt;</code>
+          <code>&lt;ol&gt;</code>
+
+        <h3>Rendered element:</h3>
+
+          <ol class="bullet">
+            <li>Sprinkled Donut</li>
+            <li>Jelly Donut</li>
+            <li>Old Fashioned Donut</li>
+          </ol>
+
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+    <h2>COMBINED ELEMENTS</h2>
+<!-- MAIN NAVIGATION SECTION -->
+      <section>
+      <h2>Main Navigation</h2>
+
+        <h3>CSS selector:</h3>
+
+          <ul>
+            <li>.button-nav-group</li>
+            <li>.button-nav</li>
+          </ul>
+
+        <h3>Sample code:</h3>
+
+          <code>&lt;ul class="button-nav-group"&gt;</code>
+          <code>&lt;a href="#" class="button-nav"&gt;About&lt;/a&gt;</code>
+          <code>&lt;/ul&gt;</code>
+
+        <h3>Rendered element:</h3>
+
+          <ul class="button-nav-group">
+            <li><a class="button-nav" href="#">About</a></li>
+            <li><a class="button-nav" href="#">Donuts</a></li>
+            <li><a class="button-nav" href="#">Social</a></li>
+            <li><a class="button-nav" href="#">Suggest</a></li>
+            <li><a class="button-nav" href="#">Contact</a></li>
+          </ul>
+
+      </section>
+
+<!-- PRODUCT LISTING SECTION -->
+      <section>
+        
+        <h2>Product Listing</h2>
+
+          <h3>CSS selector:</h3>
+
+            <ul>
+              <li>.img</li>
+              <li>.desc</li>
+            </ul>
+
+          <h3>Sample code:</h3>
+
+            <code>&lt;div class="img"&gt;</code>
+              <code>&lt;a target="_blank" href="img/DeadElvis.jpg"&gt;</code>
+                <code>&lt;img src="img/DeadElvis.jpg" alt="Donut" width="300" height="225"&gt;</code>
+              <code>&lt;/a&gt;</code>
+              <code>&lt;div class="desc">Dead Elvis&lt;/div&gt;</code>
+            <code>&lt;/div&gt;</code>
+
+          <h3>Rendered element:</h3>
+          <div class="col-9">
+            <div class="img">
+              <a target="_blank" href="img/DeadElvis.jpg">
+                <img src="img/DeadElvis.jpg" alt="Donut" width="300" height="225">
+              </a>
+              <div class="desc">Dead Elvis</div>
+            </div>
+
+            <div class="img">
+              <a target="_blank" href="img/LemonSichuan.jpg">
+                <img src="img/LemonSichuan.jpg" alt="Donut" width="300" height="225">
+              </a>
+              <div class="desc">Lemon Sichuan</div>
+            </div>
+
+            <div class="img">
+              <a target="_blank" href="img/Licorice.jpg">
+                <img src="img/Licorice.jpg" alt="Donut" width="300" height="225">
+              </a>
+              <div class="desc">Licorice</div>
+            </div>
+
+            <div class="img">
+              <a target="_blank" href="img/MapleBacon.jpg">
+                <img src="img/MapleBacon.jpg" alt="Donut" width="300" height="225">
+              </a>
+              <div class="desc">Maple Bacon</div>
+            </div>
+
+            <div class="img">
+              <a target="_blank" href="img/OldDirtyBastard.jpg">
+                <img src="img/OldDirtyBastard.jpg" alt="Donut" width="300" height="225">
+              </a>
+              <div class="desc">Old Dirty Bastard</div>
+            </div>
+
+            <div class="img">
+              <a target="_blank" href="img/PineappleBasil.jpg">
+                <img src="img/PineappleBasil.jpg" alt="Donut" width="300" height="225">
+              </a>
+              <div class="desc">Pineapple Basil</div>
+            </div>
+
+            <div class="img">
+              <a target="_blank" href="img/Poi.jpg">
+                <img src="img/Poi.jpg" alt="Donut" width="300" height="225">
+              </a>
+              <div class="desc">Poi</div>
+            </div>
+
+            <div class="img">
+              <a target="_blank" href="img/Rainbow.jpeg">
+                <img src="img/Rainbow.jpeg" alt="Donut" width="300" height="225">
+              </a>
+              <div class="desc">Rainbow</div>
+            </div>
+
+            <div class="img">
+              <a target="_blank" href="img/Smores.jpg">
+                <img src="img/Smores.jpg" alt="Donut" width="300" height="225">
+              </a>
+              <div class="desc">S'mores</div>
+            </div>
+          </div>
+
+      </section>
+
+<!-- WEBSITE GRID STRUCTURE SECTION -->
+      <section>
+        <h2>Website Grid Structure</h2>
+
+          <h3>CSS selector:</h3>
+            <ul>
+              <li>*</li>
+              <li>.row::after</li>
+              <li>[class*="col-"]</li>
+              <li>@media only screen and (min-width: 768px).col-1 ... 12</li>
+              <li>@media only screen and (min-width: 600px).col-m1 ... m12</li>
+              <li>.header</li>
+            </ul>
+
+          <h3>Sample code:</h3>
+            
+            <code>&lt;div class="col-3 col-m5"&gt;</code>
+              <code>&lt;nav&gt;</code>
+                <code>&lt;p&gt;On this page:&lt;/p&gt;</code>
+                <code>&lt;ul&gt;</code>
+                  <code>&lt;li&gt;Responsive Web Grid Structure&lt;/li&gt;</code>
+                <code>&lt;/ul&gt;</code>
+              <code>&lt;/nav&gt;</code>
+            <code>&lt;/div&gt;</code>
+
+          <h3>Rendered element:</h3>
+          <a href="Web_Grid_Structure.html" target="_blank">Click here to see the Responsive Web Grid Structure</a>
+
+      </section>
+    </section>
+<!-- // COMBINED ELEMENTS SECTION -->
+
+
+  </body>
+</html>
