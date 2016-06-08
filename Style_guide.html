@@ -135,18 +135,43 @@
 
           <form method="post" action="#">
 
-            <label for="form-firstName">First Name:<br></label>
-            <input type="text" id="form-firstName" placeholder="First Name">
+          <legend>Donut Suggestion</legend>
 
-            <label for="form-lastName"><br>Last Name:<br></label>
-            <input type="text" id="form-lastName" placeholder="Last Name">
+            <div>
+              <label for="form-firstName">First Name:</label>
+              <input type="text" id="form-firstName" placeholder="First Name">
+            </div>
 
-            <label for="form-suggest"><br>Donut Suggestion:<br></label>
-            <textarea id="form-suggest" placeholder="Type any details about your awesome donut here"></textarea>
+            <div>
+              <label for="form-lastName">Last Name:</label>
+              <input type="text" id="form-lastName" placeholder="Last Name">
+            </div>
 
-            <br>
-            <input class="button-nav" type="submit" value="Submit Suggestion">
+            <div>
+              <label for="form-donut-type">Donut Type:</label>
+              <select name="donut type">
+                <option value="yeast">Yeast</option>
+                <option value="cake">Cake</option>
+                <option value="old_fashioned">Old Fashioned</option>
+                <option value="filled">Filled</option>
+                <option value="crueller">Crueller</option>
+              </select>
+            </div>
 
+            <div>
+              <label for="form-details">Donut Details:</label>
+              <textarea id="form-details" placeholder="Type details about your awesome donut here"></textarea>
+            </div>
+
+            <div>
+              <label for="form-email">Email:</label>
+              <input type="email" id="form-email" name="email" placeholder="Email Address" required>
+            </div>
+
+            <div>
+              <input class="button-nav" type="submit" value="Submit Suggestion">
+            </div>
+            
           </form>
 
       </section>
