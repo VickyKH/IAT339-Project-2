@@ -1,0 +1,39 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+[class^='grid-col-'] {
+  float: left;
+  text-align: center;
+  padding: 0;
+}
+
+.grid-col-1of6 {
+  width: 16.666%;
+}
+
+.grid-col-2of6, .grid-col-1of3 {
+  width: 33.333%;
+}
+
+.grid-col-3of6, .grid-col-1of2 {
+  width: 50%;
+}
+
+.grid-col-4of6, .grid-col-2of3 {
+  width: 66.666%;
+}
+
+.grid-col-5of6 {
+  width: 83.333%;
+}
+
+.grid-col-6of6, .grid-col-3of3, .grid-col-2of2 {
+  width: 100%;
+}
+
+.grid-row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
