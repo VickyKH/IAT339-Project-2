@@ -1,39 +1,47 @@
+/* This makes sure that the padding and border are
+included in the total width and height of the element */
+
 *, *::after, *::before {
   box-sizing: border-box;
 }
 
-[class^='grid-col-'] {
-  float: left;
+/* The columns inside a row are all floating to the left,
+and are therefore taken out of the flow of the page,
+and other elements will be placed as if the columns does not exist.
+To prevent this, we will add a style that clears the flow */
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* All (*) these columns should be floating to the left,
+and have a padding of 15px */
+[class*="col-"] {
+	float: left;
   text-align: center;
   padding: 0;
 }
 
-.grid-col-1of6 {
-  width: 16.666%;
+.col-m1 {width: 8.33%;}
+.col-m2 {width: 16.66%;}
+.col-m3 {width: 25%;}
+.col-m4 {width: 33.33%;}
+.col-m5 {width: 41.66%;}
+.col-m6 {width: 50%;}
+.col-m7 {width: 58.33%;}
+.col-m8 {width: 66.66%;}
+.col-m9 {width: 75%;}
+.col-m10 {width: 83.33%;}
+.col-m11 {width: 91.66%;}
+.col-m12 {width: 100%;}
+
+
+/* For TABLETS, when screen is between 600px-768px(desktop) */
+@media only screen and (min-width: 600px) {
 }
 
-.grid-col-2of6, .grid-col-1of3 {
-  width: 33.333%;
-}
-
-.grid-col-3of6, .grid-col-1of2 {
-  width: 50%;
-}
-
-.grid-col-4of6, .grid-col-2of3 {
-  width: 66.666%;
-}
-
-.grid-col-5of6 {
-  width: 83.333%;
-}
-
-.grid-col-6of6, .grid-col-3of3, .grid-col-2of2 {
-  width: 100%;
-}
-
-.grid-row::after {
-  content: "";
-  display: block;
-  clear: both;
+/* 12 column grid structure. 100%/12=8.33%
+Media Query (condition) for DESKTOP, if it gets larger than 768px than can increase gradually */
+@media only screen and (min-width: 768px) {
 }
