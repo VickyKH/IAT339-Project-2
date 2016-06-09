@@ -1,9 +1,9 @@
 /*
-  STYLE GUIDE STYLING 
-  Default styling for the style guide 
+  STYLE GUIDE STYLING
+  Default styling for the style guide
 */
 body {
-  font-family: sans-serif;
+  font-family: 'Raleway', sans-serif;
   padding: 2rem;
 }
 
@@ -67,7 +67,7 @@ section {
   clear: left;
 }
 
-/* 
+/*
   INTERACTIVE ELEMENTS -------------------
 */
 
@@ -133,7 +133,7 @@ section {
 
 .in-text-link:hover, .in-text-link:focus {
   color: #79C9AD;
-  
+
 }
 
 /* STYLING FOR PARAGRAPH FONT*/
@@ -167,7 +167,7 @@ label {
   /*maybe something here to style the labels only?*/
 }
 
-/* 
+/*
   TEXT ELEMENTS -------------------
 */
 
@@ -198,7 +198,7 @@ label {
   font-family: Century, "Lucida Console", monospace;
 }
 
-/* 
+/*
   COMBINED ELEMENTS -------------------
 */
 
@@ -228,6 +228,10 @@ label {
   text-align: center;
   font-family: "LIQUIDO Reguar", "Lucida Console", monospace;
   font-size: 2em;
+<<<<<<< Updated upstream
   background-color: white;
   border-radius: 1em;
 }
+=======
+}
+>>>>>>> Stashed changes
