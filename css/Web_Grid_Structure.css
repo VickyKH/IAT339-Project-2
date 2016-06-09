@@ -1,5 +1,6 @@
 /* This makes sure that the padding and border are 
 included in the total width and height of the element */
+
 * { 
 	box-sizing: border-box;
 }
@@ -10,8 +11,8 @@ and other elements will be placed as if the columns does not exist.
 To prevent this, we will add a style that clears the flow */
 .row::after {
 	content: "";
+	display: table;
 	clear: both;
-	display: block;
 }
 
 /* All (*) these columns should be floating to the left, 

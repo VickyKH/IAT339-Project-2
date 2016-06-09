@@ -2,6 +2,9 @@
   STYLE GUIDE STYLING 
   Default styling for the style guide 
 */
+
+/* Link to fonts used from Google Fonts https://www.google.com/fonts#UsePlace:use/Collection:Didact+Gothic|Bangers|Permanent+Marker */
+
 body {
   font-family: sans-serif;
   padding: 2rem;
@@ -80,7 +83,7 @@ section {
 }
 
 .button-nav {
-  font-family: "LIQUIDO Reguar", "Lucida Console", monospace;
+  font-family: "Bangers", "Lucida Console", monospace;
   font-size: 1.5em;
   display: inline-block;
   padding: 0.15em 0.75em;
@@ -138,18 +141,18 @@ section {
 
 /* STYLING FOR PARAGRAPH FONT*/
 .styled-para {
-  font-family: Century, "Lucida Console", monospace;
+  font-family: "Didact Gothic", "Lucida Console", monospace;
   margin-top: 0.5em;
 }
 
 /* STYLING FOR FILL FORM */
 form {
   display: inline-block;
-  font-family: "Kitsune Udon", "Lucida Console" ,monospace;
+  font-family: "Permanent Marker", "Lucida Console" ,monospace;
   font-size: 1.75em;
   color: #FFF;
   background-color: #333;
-  padding: 2rem;
+  padding: 1.5rem;
   text-align: right; /*this makes it look aligned but IDK how to fix the "donut type" from falling inbetween*/
 }
 
@@ -159,7 +162,7 @@ form #form-details, #form-firstName, #form-lastName, #form-email {
 
 
 legend {
-  font-family: "LIQUIDO Fluid", "Lucida Console", monospace;
+  font-family: "Bangers", "Lucida Console", monospace;
   font-size: 2em;
 }
 
@@ -172,7 +175,7 @@ label {
 */
 
 .styled-h3 {
-  font-family: "LIQUIDO Fluid", "Lucida Console", monospace;
+  font-family: "Bangers", "Lucida Console", monospace;
   font-size: 5em;
   line-height: 0.9em;
   margin-top: 0.3em;
@@ -180,7 +183,7 @@ label {
 }
 
 .styled-h4 {
-  font-family: "LIQUIDO Reguar", "Lucida Console", monospace;
+  font-family: "Bangers", "Lucida Console", monospace;
   font-size: 3em;
   line-height: 1em;
   margin-top: 0.5em;
@@ -188,14 +191,14 @@ label {
 }
 
 .styled-h5 {
-  font-family: "Kitsune Udon", "Lucida Console", monospace;
+  font-family: "Permanent Marker", "Lucida Console", monospace;
   font-size: 2em;
   line-height: 0.75em;
   margin-bottom: 0.75em;
 }
 
 .bullet {
-  font-family: Century, "Lucida Console", monospace;
+  font-family: "Didact Gothic", "Lucida Console", monospace;
 }
 
 /* 
@@ -226,7 +229,7 @@ label {
 .desc {
   padding: 5px;
   text-align: center;
-  font-family: "LIQUIDO Reguar", "Lucida Console", monospace;
+  font-family: "Bangers", "Lucida Console", monospace;
   font-size: 2em;
   background-color: white;
   border-radius: 1em;
