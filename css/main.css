@@ -222,6 +222,11 @@ ul li, ol li {
 
 
 /* STYLING FOR GALLERY */
+img {
+  width: 100%;
+  height: auto;
+}
+
 .img {
   border: 0.25em solid #EF4B6D;
   display: inline-block;
@@ -318,4 +323,48 @@ footer a {
 
 footer ul {
   list-style: none;
+}
+
+/*** Shop ***/
+
+.product {
+  padding: 1em;
+}
+
+.product a {
+  border: none;
+}
+
+.product img {
+  padding: 1em;
+}
+
+
+/*** Donut Item Post ***/
+
+main {
+  display: flex wrap;
+}
+
+.product-image {
+
+}
+
+.description {
+  padding: 1em;
+}
+
+p.price {
+
+}
+
+/** Review Box **/
+
+.reviews {
+  padding: 1em;
+  background-color: #DDD;
+}
+
+div.quote {
+  font-style: italic;
 }

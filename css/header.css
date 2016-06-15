@@ -38,7 +38,8 @@ nav #link-menu {
   visibility: visible;
   border: none;
   text-transform: uppercase;
-    font-family: 'Didact Gothic', 'Verdana', sans-serif;
+  font-family: 'Didact Gothic', 'Verdana', sans-serif;
+  font-size: 1em;
 }
 
 nav #link-shop, #link-about, #link-blog, #link-contact {
