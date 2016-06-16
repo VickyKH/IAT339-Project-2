@@ -344,6 +344,16 @@ label {
   letter-spacing: 0.235em;
 }
 
+/*** Homepage ***/
+
+.announcement {
+  background-image: url(http://s3.amazonaws.com/spoonflower/public/design_thumbnails/0423/2766/rrpickle_pattern_repeat_shop_preview.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 5em;
+}
+
 /*** Donut Item Post ***/
 
 main {
