@@ -90,7 +90,7 @@ section {
 
 [class^='button']:hover, [class^='button']:focus, button:hover, button:focus {
   background-color: #79C9AD;
-  color:#79C9AD;
+  color:#FFF;
   border-color: #79C9AD;
 }
 
@@ -263,8 +263,8 @@ h1 {
   display: inline-block;
   margin: 0.5em auto;
   padding: 0.25em 0.5em;
-  background-color: #79C9AD;
-  color: #EF4B6D;
+  background-color: #EF4B6D;
+  color:#FFF ;
 }
 
 .section-head {

@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	color: #FFF
+}
+
+article {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.blog-header {
+	/*width: 100%; /*100% of the article's (wrapper) width; will adjust with article*/
+	margin-bottom: 10px;
+}
+
+.post {
+	background-color: black;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.post p {
+	margin-bottom: 15px;
+}
+
+/*last paragraph remove margin at bottom*/
+.post p:last-child {
+	margin-bottom: 0;
+}
+
+.post img {
+	width: 100%;
+}

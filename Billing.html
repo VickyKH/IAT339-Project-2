@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Info</title>
+
+    <!-- CSS -->
+    <link href="css/New_Stuff_Jimmy.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+
+  </head>
+
+  <body>
+
+    <header>
+      <nav>
+        <a href="#" class="logo">Dirty Mouth Donuts</a>
+        <a href="#" class="link" id="link-menu">Menu</a>
+        <a href="#" class="link" id="link-shop">Shop</a>
+        <a href="#" class="link" id="link-about">About</a>
+        <a href="#" class="link" id="link-blog">Blog</a>
+        <a href="#" class="link" id="link-contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+    <h1>Billing Info</h1>
+      <form method="post" action="#">
+            <label for="form-firstName">First Name</label>
+            <input type="text" id="form-firstName" placeholder="First Name" required>
+
+            <label for="form-lastName">Last Name</label>
+            <input type="text" id="form-lastName" placeholder="Last Name" required>
+
+            <label for="form-email">Email:</label>
+            <input type="email" id="form-email" name="email" placeholder="Email Address" required>
+
+            <label for="form-address">Billing Address:</label>
+            <input type="text" id="form-address" name="address" placeholder="Billing Address" required>
+
+            <label for="form-phone">Phone Number:</label>
+            <input type="tel" id="form-phone" name="phone" placeholder="Phone Number" required>
+
+            <label>Credit Card Type:</label>
+            <select name="card-type" required>
+              <option value="visa">Visa</option>
+              <option value="mastercard">Mastercard</option>
+            </select>
+
+            <label for="form-cardnumber">Card Number:</label>
+            <input type="text" id="form-cardnumber" name="cardnumber" placeholder="Credit Card Number" required>
+
+            <label for="form-csc">Card Security Code:</label>
+            <input type="text" id="form-csc" name="csc" placeholder="Card Security Code" required>
+
+            <label>Card Expiry Date</label>
+            <input type="date" name="card-expiry" required>
+
+            <input class="button-nav" type="submit" value="Submit Order">
+
+          </form>
+    </main>
+
+    <footer>
+      <ul>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </footer>
+
+  </body>
+</html>
