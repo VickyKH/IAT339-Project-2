@@ -1,7 +1,8 @@
 header {
-  margin: 0 0 2rem 0;
+  margin: 0
   padding: 1em;
-  top: 0;
+  z-index: 99;
+  background: #FFF;
 }
 
 nav {
@@ -13,7 +14,7 @@ nav {
   position: relative;
   margin: 0;
   padding: 0;
-  animation: visibility 1s;
+  transition: margin-bottom 1s;
 }
 
 nav a {
@@ -29,7 +30,7 @@ nav a:hover, nav a:focus {
 
 nav .logo {
   align-self: flex-start;
-  width: 100%;
+  width: 40%;
 }
 
 nav #link-menu {
@@ -50,6 +51,10 @@ nav #link-shop, #link-about, #link-blog, #link-contact {
   text-align: center;
 }
 
+nav.isClosed {
+  margin-bottom: -9em;
+}
+
 nav.isClosed .link {
   visibility: collapse;
 }
@@ -68,11 +73,14 @@ Media Query (condition) for DESKTOP, if it gets larger than 768px than can incre
 
   header {
     padding: 0 1em;
-  }
+    margin-bottom: -6em;
+
+    }
 
   nav {
     justify-content: space-around;
     align-items: center;
+    align-content: center;
     flex-flow: row nowrap;
   }
 
@@ -81,12 +89,20 @@ Media Query (condition) for DESKTOP, if it gets larger than 768px than can incre
   }
 
   nav .logo {
-    height: 5em;
+    height: 14em;
     order:3;
     flex: 0 1 auto;
-    background-image: url("http://placehold.it/350x150");
+    background-image: url("bkg/logo-bkg.png");
     background-size: cover;
     width: 15em;
+  }
+
+  .logo img {
+    margin: 2.5em 0 0 0.5em;
+  }
+
+  nav .link {
+    margin-bottom: 5em;
   }
 
   nav #link-menu {
