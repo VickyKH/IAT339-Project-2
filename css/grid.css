@@ -38,12 +38,21 @@ and have a padding of 15px */
 
 
 /* For TABLETS, when screen is between 600px-768px(desktop) */
-@media only screen and (min-width: 300px) {
+@media only screen and (min-width: 435px) {
+
 }
 
-@media (min-width: 555px) {
+@media (max-width: 555px) {
+  .col-m2 {
+    width: 100%;
+  }
+
   .col-m3 {
     width: 50%;
+  }
+
+  .clear-box {
+    width: 0;
   }
 
 }

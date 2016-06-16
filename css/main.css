@@ -371,6 +371,10 @@ label {
 
 }
 
+p.subtitle {
+  margin: 0;
+}
+
 /*** Homepage ***/
 
 .announcement {
@@ -378,7 +382,7 @@ label {
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding: 5em;
+  padding: 5em 0;
   font-size: 1.5rem;
 }
 
@@ -386,11 +390,12 @@ label {
   margin: 0;
 }
 
-.announcement h2 span {
+.announcement h2 em {
   display: block;
   font-family: 'Permanent Marker', cursive;
   font-size: 1.5em;
   letter-spacing: 0.25em;
+  color: #c9c96e;
 }
 
 .announcement p {
@@ -404,11 +409,32 @@ label {
 
 .overlay-circle {
   background-color: rgba(5,5,5,0.7);
-  padding: 5em;
+  padding: 3em;
   border-radius: 50%;
   width: auto;
   height: auto;
+  text-align: center;
 }
+
+
+
+.announcement .overlay-circle {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .overlay-circle {
+    padding: 1em 0;
+    border-radius: 0;
+  }
+
+  .announcement .overlay-circle {
+    width: 100%;
+  }
+}
+
 
 /*** Donut Item Post ***/
 
