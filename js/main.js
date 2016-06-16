@@ -7,8 +7,6 @@ $(document).ready(
     console.log("Page width: " + pageWidth);
     console.log("Page height " + pageHeight);
 
-    $("nav").removeClass("isOpen");
-    $("nav").addClass("isClosed");
     var navOpen = 0;		// Navigation is closed
     var headerLocked = false;	// Header unlocked
 
