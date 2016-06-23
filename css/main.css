@@ -309,31 +309,12 @@ table tr td {
   margin: 0;
 }
 
-footer {
-  background-color: #333;
-  font-size: 1rem;
-  padding: 1em;
-  margin: 2rem 0 0 0;
-}
-
-footer a {
-  color: #FFF;
-  border: none;
-}
-
-footer ul {
-  list-style: none;
-}
-
 /*** Shop ***/
 
 div.header {
   display: block;
   width: 100%;
   position: relative;
-}
-
-.header h1 {
 }
 
 .search-options {
@@ -353,8 +334,12 @@ div.header {
 
 }
 
+.gallery {
+  background: url("bkg/bkg-confetti.png") repeat;
+}
+
 .product {
-  padding: 1em;
+  padding: 0.25em;
 }
 
 .product a {
@@ -362,7 +347,7 @@ div.header {
 }
 
 .product img {
-  padding: 5em;
+  padding: 1em;
 }
 
 label {
@@ -471,6 +456,9 @@ p.subtitle {
   }
 }
 
+.front-box {
+  padding: 5em 0;
+}
 
 /*** Donut Item Post ***/
 
@@ -508,6 +496,9 @@ p.price {
 }
 
 @media only screen and (min-width: 768px) {
+  .product-image {
+    width: 100%;
+  }
 
 
 }
@@ -527,7 +518,9 @@ div.quote {
   margin-bottom: 1.5em;
 }
 
-label.name {
+p.name {
+  text-transform: uppercase;
+  letter-spacing: 0.235em;
   font-style: normal;
   display: block;
   text-align: center;

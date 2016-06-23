@@ -43,12 +43,21 @@ and have a padding of 15px */
 }
 
 @media (max-width: 555px) {
+
   .col-m2 {
     width: 100%;
   }
 
   .col-m3 {
     width: 50%;
+  }
+
+  .col-m4 {
+    width: 100%;
+  }
+
+  .col-m6 {
+    width: 100%;
   }
 
   .clear-box {

@@ -1,3 +1,9 @@
+/*****************************
+
+  CSS for the header/footer
+
+******************************/
+
 header.header-site {
   padding: 0;
   z-index: 99;
@@ -80,13 +86,7 @@ nav.isOpen [class*="navlink"] {
   visibility: visible;
 }
 
-/* For TABLETS, when screen is between 600px-768px(desktop) */
-@media only screen and (min-width: 600px) {
-}
-
-/**
-  Media query for the extended header.
-**/
+/** Media query for the extended header. **/
 @media only screen and (min-width: 768px) {
 
   header.header-site {
@@ -155,4 +155,44 @@ nav.isOpen [class*="navlink"] {
     width: auto;
   }
 
+}
+
+/** Footer **/
+
+footer {
+  background-color: #333;
+  font-size: 1rem;
+  padding: 1em;
+  margin: 2rem 0 0 0;
+  text-align: left;
+}
+
+footer > div {
+  padding-top: 1em;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer h2 {
+  margin: 0 0 1em 0;
+  font-size: 1.25rem;
+}
+
+footer a{
+  border: none;
+}
+
+footer nav a {
+  color: #FFF;
+  display: block;
+}
+
+footer div.social-media h2 {
+  font-size: 1.5rem;
+}
+
+footer div.social-media ul li{
+  padding: 0.25em;
 }
