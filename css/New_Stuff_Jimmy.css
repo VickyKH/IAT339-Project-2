@@ -27,18 +27,3 @@
 	background:none!important;
 }
 
-/* For TABLETS, when screen is 600px; doesn't seem to work having another class to use for the other size */
-@media only screen and (min-width: 600px) {
-	.col-t1 {width: 8.33%;}
-	.col-t2 {width: 16.66%;}
-	.col-t3 {width: 25%;}
-	.col-t4 {width: 33.33%;}
-	.col-t5 {width: 41.66%;}
-	.col-t6 {width: 50%;}
-	.col-t7 {width: 58.33%;}
-	.col-t8 {width: 66.66%;}
-	.col-t9 {width: 75%;}
-	.col-t10 {width: 83.33%;}
-	.col-t11 {width: 91.66%;}
-	.col-t12 {width: 100%;}
-}
