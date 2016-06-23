@@ -334,8 +334,9 @@ div.header {
 
 }
 
-.gallery {
-  background: url("bkg/bkg-confetti.png") repeat;
+
+.gallery > div {
+  margin-bottom: 1em;
 }
 
 .product {
@@ -374,7 +375,7 @@ p.subtitle {
   padding:1em;
   margin:1em 0 3em;
   color:#000;
-  background-color: #FFF;
+  background-color: rgba(255,255,255,0.8);
   /**border: 1px solid #AAA;**/
   -webkit-border-radius:0.75em;
   -moz-border-radius:0.75em;
@@ -389,7 +390,7 @@ p.subtitle {
   left:46%; /* controls horizontal position */
   border-width:1em 1em 0; /* vary these values to change the angle of the vertex */
   border-style:solid;
-  border-color:#FFF transparent;
+  border-color:rgba(255,255,255,0.8) transparent;
   /* reduce the damage in FF3.0 */
   display:block;
   width:0;
@@ -507,7 +508,7 @@ p.price {
 
 .reviews {
   padding: 1em;
-  background-color: #DDD;
+  background: #DDD;
 }
 
 div.quote {
