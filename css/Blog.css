@@ -8,17 +8,11 @@ main {
 }
 
 article {
-	display: flex;
-	flex-direction: column;
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 50px;
+	margin-right: 50px;
 }
 
-.blog-header {
-	/*width: 100%; /*100% of the article's (wrapper) width; will adjust with article*/
-	margin-bottom: 10px;
-}
+/*width: 100%; /*100% of the article's (wrapper) width; will adjust with article*/
 
 .post {
 	background-color: black;

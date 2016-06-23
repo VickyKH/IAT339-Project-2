@@ -1,17 +1,7 @@
-/*About Page*/
-.about-text, .about-banner {
-	display: flex;
-	flex-flow: column;
-	align-content: bottom;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	margin: 0.5;
-	padding: 0.5;
-}
+
 
 /*Contact*/
-#div-map1 {
+/*#div-map1 {
 	overflow:hidden;
 	height:300px;
 	width:auto;
@@ -23,22 +13,13 @@
 }
 
 #gmap_canvas img {
-	max-width:none!important; /*Dunno what !important does; these are from that Google Map embedding generator*/
+	max-width:none!important; 
 	background:none!important;
+}*/
+
+iframe {
+	overflow: hidden;
+	width: 100%;
+	height: 300px;
 }
 
-/* For TABLETS, when screen is 600px; doesn't seem to work having another class to use for the other size */
-@media only screen and (min-width: 600px) {
-	.col-t1 {width: 8.33%;}
-	.col-t2 {width: 16.66%;}
-	.col-t3 {width: 25%;}
-	.col-t4 {width: 33.33%;}
-	.col-t5 {width: 41.66%;}
-	.col-t6 {width: 50%;}
-	.col-t7 {width: 58.33%;}
-	.col-t8 {width: 66.66%;}
-	.col-t9 {width: 75%;}
-	.col-t10 {width: 83.33%;}
-	.col-t11 {width: 91.66%;}
-	.col-t12 {width: 100%;}
-}

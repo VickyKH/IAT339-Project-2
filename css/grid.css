@@ -69,6 +69,7 @@ and have a padding of 15px */
 /* 12 column grid structure. 100%/12=8.33%
 Media Query (condition) for DESKTOP, if it gets larger than 768px than can increase gradually */
 @media only screen and (min-width: 768px) {
+  
 }
 
 @media only screen and (min-width: 1080px) {
