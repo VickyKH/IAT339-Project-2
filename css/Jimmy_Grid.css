@@ -40,7 +40,7 @@ and have a padding of 15px */
 	.col-m10 {width: 83.33%;}
 	.col-m11 {width: 91.66%;}
 	.col-m12 {width: 100%;}
-	body {background-color: #ccffff;} /*light blue*/
+	/*body {background-color: #ccffff;} /*light blue*/
 }
 
 /* 12 column grid structure. 100%/12=8.33%
@@ -59,6 +59,6 @@ Media Query (condition) for DESKTOP, if it gets larger than 768px than can incre
 	.col-10 {width: 83.33%;}
 	.col-11 {width: 91.66%;}
 	.col-12 {width: 100%;}
-	body {background-color: #ffffcc;} /*light yellow*/
+	/*body {background-color: #ffffcc;} /*light yellow*/
 }
 
