@@ -1,14 +1,4 @@
-/*About Page*/
-.about-text, .about-banner {
-	display: flex;
-	flex-flow: column;
-	align-content: bottom;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	margin: 0.5;
-	padding: 0.5;
-}
+
 
 /*Contact*/
 #div-map1 {
@@ -23,7 +13,7 @@
 }
 
 #gmap_canvas img {
-	max-width:none!important; /*Dunno what !important does; these are from that Google Map embedding generator*/
+	max-width:none!important; 
 	background:none!important;
 }
 
