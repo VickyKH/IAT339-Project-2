@@ -10,7 +10,7 @@ $(document).ready(
     var navOpen = 0;		// Navigation is closed
     var headerLocked = false;	// Header unlocked
 
-    $("#link-menu").click(
+    $(".navlink-menu").click(
 			function(clickEvent) {
 				clickEvent.preventDefault();
 

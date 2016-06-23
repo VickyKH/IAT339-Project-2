@@ -334,17 +334,23 @@ div.header {
 }
 
 .header h1 {
-  align-self: flex-start;
 }
 
 .search-options {
   position: absolute;
-  top: 0;
-  right: 0;
+  width: 40%;
 }
 
 .search-options select {
   margin: 1em;
+}
+
+@media (max-width: 555px) {
+  .search-options {
+    position: absolute;
+    width: 100%;
+  }
+
 }
 
 .product {
@@ -356,7 +362,7 @@ div.header {
 }
 
 .product img {
-  padding: 1em;
+  padding: 5em;
 }
 
 label {
@@ -373,6 +379,35 @@ label {
 
 p.subtitle {
   margin: 0;
+}
+
+
+/** CSS speech bubble from http://nicolasgallagher.com/pure-css-speech-bubbles/demo/ **/
+
+.bubble {
+  position:relative;
+  padding:1em;
+  margin:1em 0 3em;
+  color:#000;
+  background-color: #FFF;
+  /**border: 1px solid #AAA;**/
+  -webkit-border-radius:0.75em;
+  -moz-border-radius:0.75em;
+  border-radius:0.75em;
+}
+
+/* creates triangle */
+.bubble:after {
+  content:"";
+  position:absolute;
+  bottom:-0.9em; /* value = - border-top-width - border-bottom-width */
+  left:46%; /* controls horizontal position */
+  border-width:1em 1em 0; /* vary these values to change the angle of the vertex */
+  border-style:solid;
+  border-color:#FFF transparent;
+  /* reduce the damage in FF3.0 */
+  display:block;
+  width:0;
 }
 
 /*** Homepage ***/
@@ -417,21 +452,22 @@ p.subtitle {
 }
 
 
-
 .announcement .overlay-circle {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media only screen and (max-width: 600px) {
-  .overlay-circle {
+@media only screen and (max-width: 768px) {
+  .announcement .overlay-circle {
     padding: 1em 0;
     border-radius: 0;
+    width: 100%;
+    font-size: 1.2rem;
   }
 
-  .announcement .overlay-circle {
-    width: 100%;
+  .announcement {
+    padding: 3em 0;
   }
 }
 
@@ -442,8 +478,25 @@ main {
   display: flex wrap;
 }
 
-.product-image {
+div.description {
+  position: relative;
+}
 
+[class*="tag"] {
+  background: #AAA;
+  display: inline-block;
+  padding: 0 0.5em;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.product {
+  position: relative;
+}
+
+.product-image {
+  padding: 5em;
 }
 
 .description {
@@ -468,4 +521,14 @@ p.price {
 
 div.quote {
   font-style: italic;
+}
+
+.quote p {
+  margin-bottom: 1.5em;
+}
+
+label.name {
+  font-style: normal;
+  display: block;
+  text-align: center;
 }
