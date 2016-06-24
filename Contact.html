@@ -20,6 +20,7 @@
 
   <body>
 
+
     <header class="header-site">
       <nav class="isOpen">
         <a href="index.html" class="logo">
@@ -29,6 +30,16 @@
         <a href="About.html" class="navlink-about">About</a>
         <a href="Blog.html" class="navlink-blog">Blog</a>
         <a href="Contact.html" class="navlink-contact">Contact</a>
+
+    <!-- <header>
+      <nav>
+        <a href="#" class="logo">Dirty Mouth Donuts</a>
+        <a href="#" class="link" id="link-menu">Menu</a>
+        <a href="shop.html" class="link" id="link-shop">Shop</a>
+        <a href="About.html" class="link" id="link-about">About</a>
+        <a href="Blog.html" class="link" id="link-blog">Blog</a>
+        <a href="Contact.html" class="link" id="link-contact">Contact</a> -->
+
       </nav>
       <a href="#" class="navlink-menu">Menu</a>
       <a href="#" class="navlink-cart">Cart</a>
@@ -37,7 +48,7 @@
     <main>
       <h1>Contact us</h1>
       <div class="row">
-        <div class="col-t5 col-m12">
+        <div class="col-m6">
           <form method="post" action="#">
                 <label for="form-firstName">First Name</label>
                 <input type="text" id="form-firstName" placeholder="First Name">
@@ -58,7 +69,11 @@
 
 
         <!--Google Map Script: http://embedgooglemaps.com/en/ -->
-        <div class="col-t6 col-m12">
+
+
+
+   <!--     <div class="col-6 col-m7">
+>>>>>>> 813d8b1... Updated the contents
           <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
           <div id="div-map1">
             <div id='gmap_canvas'>
@@ -68,8 +83,12 @@
             function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(49.28799,-123.12140060000002),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(49.28799,-123.12140060000002)});infowindow = new google.maps.InfoWindow({content:'<strong>Dirty Mouth Donuts</strong><br>5555 W. Pender Street Vancouver, BC V5X 5X5<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
           </script>
         </div>
+        -->
+        <div class="col-m6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10410.46205479797!2d-123.1136758!3d49.2836823!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa18c6b1fc4b670fd!2sCartems+Donuterie!5e0!3m2!1sen!2sca!4v1466670957363" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
 
-        <div class="col-t6 col-m12">
+        <div class="col-m6">
           <p>
             <strong>Dirty Mouth Donuts</strong>
             <br>5555 W. Pender Street
