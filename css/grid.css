@@ -19,8 +19,8 @@ To prevent this, we will add a style that clears the flow */
 and have a padding of 15px */
 [class*="col-"] {
 	float: left;
-  text-align: center;
-  padding: 0;
+  /*text-align: center;*/
+  padding: 15px;
 }
 
 .col-m1 {width: 8.33%;}

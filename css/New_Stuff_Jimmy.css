@@ -1,4 +1,17 @@
+/*About*/
+.About_Banner {
+	/*background-color: #79C9AD;*/
+	background-image: url(https://s-media-cache-ak0.pinimg.com/736x/02/90/d0/0290d0a3a5bc4b438765397d4d6cd4ad.jpg);
+	text-align: center;
+}
 
+.About_List {
+	list-style: none;
+}
+
+.About_List li {
+	background-color: white;
+}
 
 /*Contact*/
 /*#div-map1 {
