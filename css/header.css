@@ -28,10 +28,16 @@ header.header-site {
   font-family: 'Bangers', 'Arial', sans-serif;
   letter-spacing: 0.15em;
   font-size: 1.25rem;
+  color: #222;
 }
 
 .header-site nav a:hover, .header-site nav a:focus {
   text-decoration: none;
+  color: #79C9AD;
+}
+
+.header-site nav a.selected {
+  color: #79C9AD;
 }
 
 nav .logo {
@@ -66,6 +72,7 @@ nav .logo:hover {
   text-transform: uppercase;
   font-family: 'Didact Gothic', 'Verdana', sans-serif;
   font-size: 1em;
+  width: 2rem;
 }
 
 .navlink-shop, .navlink-about, .navlink-blog, .navlink-contact {
@@ -167,6 +174,7 @@ footer {
   padding: 1em;
   margin: 2rem 0 0 0;
   text-align: left;
+  color: #FFF;
 }
 
 footer > div {
@@ -182,13 +190,17 @@ footer h2 {
   font-size: 1.25rem;
 }
 
-footer a{
+footer a {
   border: none;
 }
 
 footer nav a {
   color: #FFF;
   display: block;
+}
+
+footer div.info {
+  font-size: 1.2rem;
 }
 
 footer div.social-media h2 {

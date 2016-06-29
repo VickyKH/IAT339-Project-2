@@ -9,7 +9,7 @@ body {
   font-family: 'Didact Gothic', 'Verdana', sans-serif;
   padding: 0;
   margin: 0;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
 }
 
 section:not([id]) {
@@ -349,6 +349,8 @@ div.header {
 
 .product img {
   padding: 1em;
+  width:  100%;
+  height: auto;
 }
 
 label {
@@ -363,8 +365,12 @@ label {
 
 }
 
-p.subtitle {
+.product p.name {
+  display: block;
+  text-align: center;
   margin: 0;
+  line-height: normal;
+
 }
 
 
@@ -459,6 +465,24 @@ p.subtitle {
 
 .front-box {
   padding: 5em 0;
+  height: 15em;
+}
+
+#homepage-story {
+    background: url("bkg/home-story.jpg");
+    background-size: cover;
+}
+
+#homepage-blog {
+  background: url("bkg/home-blog.jpg");
+  background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .front-box {
+    height: 10em;
+  }
+
 }
 
 /*** Donut Item Post ***/
@@ -472,12 +496,27 @@ div.description {
 }
 
 [class*="tag"] {
-  background: #AAA;
   display: inline-block;
   padding: 0 0.5em;
   position: absolute;
   top: 0;
   right: 0;
+  font-size: 1.05rem;
+}
+
+.tag-new {
+  background-color: #79C9AD;
+  color: #fff;
+}
+
+.tag-featured {
+  background-color: #FCF042;
+  color:#EF4B6D;
+}
+
+.tag-hot {
+  color:#EF4B6D;
+  background-color: #DDD;
 }
 
 .product {
@@ -500,8 +539,6 @@ p.price {
   .product-image {
     width: 100%;
   }
-
-
 }
 
 /** Review Box **/
@@ -519,10 +556,87 @@ div.quote {
   margin-bottom: 1.5em;
 }
 
-p.name {
+.reviews p.name {
   text-transform: uppercase;
   letter-spacing: 0.235em;
   font-style: normal;
   display: block;
   text-align: center;
+  margin: 0;
 }
+
+
+/** Cart **/
+
+table.cart, table.cart th, table.cart td {
+  border: none;
+}
+
+table.cart th, table.cart td {
+  width: 25%;
+}
+
+table.cart .total {
+  background-color: #DDD;
+}
+
+td p {
+  text-align: center;
+}
+
+@media only screen and (max-width: 555px) {
+
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, tfoot, th, td, tr {
+    display: block;
+  }
+
+  th:empty, td:empty {
+    visibility: collapse;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+/*    position: absolute;
+    top: -9999px;
+    left: -9999px;*/
+    visibility: collapse;
+  }
+
+  table.cart th, table.cart td {
+    width: 100%;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    /*padding-left: 50%;*/
+  }
+
+  td p {
+    position: absolute;
+    left: 50%;
+    padding-left: 1em;
+  }
+
+  /* Table headers (smaller size) */
+  td:before {
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 2em;
+    right: 50%;
+    padding-right: 1em;
+		white-space: nowrap;
+    font-weight: bold;
+	}
+
+	/* Label the data */
+	td.name:before { content: "Item"; }
+	td.quantity:before { content: "Quantity"; }
+	td.price:before { content: "Price"; }
+  td.total:before { content: "Total"}
+	}
+}
+/** End media query **/

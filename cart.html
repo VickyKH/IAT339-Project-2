@@ -35,7 +35,7 @@
 
     <main>
       <h1>Cart</h1>
-      <div class="row">
+<!--      <div class="row">
         <div class="col-m6"><h2>Item</h2></div>
         <div class="col-m3"><h2>Quantity</h2></div>
         <div class="col-m3"><h2>Price</h2></div>
@@ -64,6 +64,40 @@
       <div class="row">
         <div class="clear-box col-m6">&nbsp;</div>
         <div class="total-price col-m6"><a href="Billing.html" class="button-teal">Checkout</a></div>
+      </div>-->
+
+      <table class="cart">
+        <thead>
+          <th colspan="2">Item</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </thead>
+        <tr>
+          <td class="image"><img src="img/donut-pickle-before.png" alt="Pickle donut icon"></td>
+          <td class="name text">
+            <p><a href="donut_pickle.html">Pickle</a></p>
+            <a href="" class="button-inverse">Delete</a></td>
+          <td class="quantity text"><p>2</p></td>
+          <td class="price text"><p>$5</p></td>
+        </tr>
+        <tr>
+          <td class="image"><img src="img/donut-popmarsh-before.png" alt="Popcorn Marshmallow donut icon"></td>
+          <td class="name text">
+            <p><a href="donut_popmarsh.html">Popcorn Marshmallow</a></p>
+            <p><a href="">Delete</a></p>
+          </td>
+          <td class="quantity text"><p>2</p></td>
+          <td class="price text"><p>$5</p></td>
+        </tr>
+        <tfoot>
+          <td colspan="2"></td>
+          <th class="total text">Total</th>
+          <td class="total text"><p>$15</p></td>
+        </tfoot>
+      </table>
+
+      <div class="row">
+        <a href="Billing.html" class="button col-m3">Checkout</a>
       </div>
 
     </main>

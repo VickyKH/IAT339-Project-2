@@ -48,6 +48,13 @@ and have a padding of 15px */
     width: 50%;
   }
 
+  .col-m6 {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 766px) {
   .col-m3 {
     width: 50%;
   }
@@ -56,18 +63,13 @@ and have a padding of 15px */
     width: 100%;
   }
 
-  .col-m6 {
-    width: 100%;
+  .no-resize .col-m4 {
+    width: 33.33%;
   }
 
   .clear-box {
     width: 0;
   }
-
-  .no-resize .col-m4 {
-    width: 33.33%;
-  }
-
 }
 
 /* 12 column grid structure. 100%/12=8.33%
@@ -76,9 +78,9 @@ Media Query (condition) for DESKTOP, if it gets larger than 768px than can incre
 
 }
 
-@media only screen and (min-width: 1080px) {
-  main {
-    width: 1080px;
+@media only screen and (min-width: 2060px) {
+  .wrapper {
+    width: 2060px;
     margin-left: auto;
     margin-right: auto;
   }
