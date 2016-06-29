@@ -375,8 +375,9 @@ p.subtitle {
   padding:1em;
   margin:1em 0 3em;
   color:#000;
-  background-color: rgba(255,255,255,0.8);
-  /**border: 1px solid #AAA;**/
+  /*background-color: rgba(255,255,255,0.8);*/
+  background-color: rgb(255,255,255);
+  border: 5px solid #79C9AD;
   -webkit-border-radius:0.75em;
   -moz-border-radius:0.75em;
   border-radius:0.75em;
@@ -386,11 +387,13 @@ p.subtitle {
 .bubble:after {
   content:"";
   position:absolute;
-  bottom:-0.9em; /* value = - border-top-width - border-bottom-width */
+  bottom:-1em; /* value = - border-top-width - border-bottom-width */
   left:46%; /* controls horizontal position */
   border-width:1em 1em 0; /* vary these values to change the angle of the vertex */
   border-style:solid;
-  border-color:rgba(255,255,255,0.8) transparent;
+  /*border-color:rgba(255,255,255,0.8) transparent;*/
+  /*border-color:rgb(255,255,255) transparent;*/
+  border-color: #79C9AD transparent;
   /* reduce the damage in FF3.0 */
   display:block;
   width:0;
@@ -508,7 +511,8 @@ p.price {
 
 .reviews {
   padding: 1em;
-  background: #DDD;
+  /*background: #DDD;*/
+  background-image: url(../img/dinoDonutBG.jpg);
 }
 
 div.quote {
@@ -525,4 +529,6 @@ p.name {
   font-style: normal;
   display: block;
   text-align: center;
+  background-color: #79C9AD;
+  color: white;
 }
