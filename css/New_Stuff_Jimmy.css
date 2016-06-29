@@ -14,25 +14,12 @@
 }
 
 /*Contact*/
-/*#div-map1 {
-	overflow:hidden;
-	height:300px;
-	width:auto;
-}
-
-#gmap_canvas {
-	height:300px;
-	width:auto;
-}
-
-#gmap_canvas img {
-	max-width:none!important; 
-	background:none!important;
-}*/
-
 iframe {
 	overflow: hidden;
 	width: 100%;
 	height: 300px;
 }
 
+.map-address {
+	text-align: center;
+}
