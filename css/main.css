@@ -464,8 +464,17 @@ label {
 }
 
 .front-box {
-  padding: 5em 0;
+  padding: 2em;
   height: 15em;
+  border-left: 0.5em #FFF solid;
+  border-right: 0.5em #FFF solid;
+  border-top: 1em #FFF solid;
+  border-bottom: 1em #FFF solid;
+  text-align: center;
+}
+
+.front-box h3 {
+  font-size: 1.5rem;
 }
 
 #homepage-story {
@@ -481,6 +490,7 @@ label {
 @media only screen and (max-width: 768px) {
   .front-box {
     height: 10em;
+    border: none;
   }
 
 }
@@ -489,6 +499,7 @@ label {
 
 main {
   display: flex wrap;
+  padding-top: 4rem;
 }
 
 div.description {
