@@ -13,6 +13,10 @@
 	background-color: white;
 }
 
+.about-head {
+	color: #EF4B6D;
+}
+
 /*Contact*/
 iframe {
 	overflow: hidden;
