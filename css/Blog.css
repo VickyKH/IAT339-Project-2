@@ -4,24 +4,32 @@
 }
 
 main {
-	color: #FFF
+	color: black;
 }
 
 article {
-	margin-left: 50px;
-	margin-right: 50px;
+	/*margin-left: 50px;
+	margin-right: 50px;*/
+	margin-top: 20px;
+	
 }
 
 /*width: 100%; /*100% of the article's (wrapper) width; will adjust with article*/
 
 .post {
-	background-color: black;
+	/*background-image: url(https://s-media-cache-ak0.pinimg.com/736x/02/90/d0/0290d0a3a5bc4b438765397d4d6cd4ad.jpg );*/
+	background-image: url(../img/dinoDonutBG_Invert.jpg);
+);
 	padding: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
+	text-align: center;
 }
 
 .post p {
+	padding:10px;
 	margin-bottom: 15px;
+	text-align: left;
+	background-color: white;
 }
 
 /*last paragraph remove margin at bottom*/
@@ -30,5 +38,11 @@ article {
 }
 
 .post img {
+	/*max-width: 75%;
+	min-width: 50%;*/
 	width: 100%;
+}
+
+.time {
+	background-color: white;
 }
