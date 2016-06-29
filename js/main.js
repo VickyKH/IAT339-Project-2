@@ -39,17 +39,36 @@ $(document).ready(
       }
     });// End of if statement
 
-    $(".navlink-menu").click(
-      function(e) {
+/**  Clicking on the menu button slides the menu down  **/
+  	$(".navlink-menu").click(
+    	function(e) {
 				e.preventDefault();
-        $(".navlink").slideToggle(500);
-      }
-    )
+      	$(".navlink").slideToggle(500);
+    	}
+  	);
 
-  }
 
-);
+/**  Change donut image to an eaten version when hovered  **/
+		$(".hover-donut")
+			// On hover, change picture to eaten
+			.mouseover(function() {
+				var src = $(this).attr("src").replace("before", "after");
+				$(this).attr("src", src);
+				console.log(src);
+			})
+			// On hover, change picture back to uneaten
+			.mouseout(function() {
+				var src = $(this).attr("src").replace("after", "before");
+				$(this).attr("src", src);
+				console.log(src);
+			});
 
+}); // End of Javascript
+/*
+function(clickEvent) {
+
+	clickEvent.preventDefault();
+*/
 /**    $(window).resize(function() {
       var width = $(window).width();
       var height = $(window).height();

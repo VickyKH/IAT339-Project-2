@@ -4,11 +4,15 @@
 
 ******************************/
 
+/** Header (Mobile Version) **/
+main {
+  padding-top: 3rem;
+}
+
 header.header-site {
   padding: 0;
   z-index: 99;
-  background: #FFF;
-  border-bottom: 1px solid #DDD;
+  background: #333;
   position: fixed;
   width: 100%;
   top: 1;
@@ -31,7 +35,7 @@ header.header-site {
   font-family: 'Bangers', 'Arial', sans-serif;
   letter-spacing: 0.15em;
   font-size: 1.25rem;
-  color: #222;
+  color: #FFF;
 }
 
 .header-site nav a:hover, .header-site nav a:focus {
@@ -48,6 +52,7 @@ nav .logo {
   width: 11em;
   padding: 0.5em;
   transition: all 0.5s;
+  background: none;
 }
 
 nav .logo:hover {
@@ -169,7 +174,8 @@ nav.isOpen [class*="navlink"] {
 
 }
 
-/** Footer **/
+
+/**  Footer  **/
 
 footer {
   background-color: #333;
