@@ -22,63 +22,69 @@
 
     <header class="header-site">
       <div class="wrapper">
-        <nav class="isOpen">
-          <a href="index.html" class="logo">
-            <img src="img/logo-sub.svg" alt="Dirty Mouth Donuts - Cute As Hell">
-          </a>
+      <nav class="isOpen">
+        <a href="index.html" class="logo">
+          <img src="img/logo-sub.svg" alt="Dirty Mouth Donuts - Cute As Hell">
+        </a>
 
-          <a href="shop.html" class="navlink navlink-shop" class="selected">Shop</a>
-          <a href="About.html" class="navlink navlink-about">About</a>
-          <a href="Blog.html" class="navlink navlink-blog">Blog</a>
-          <a href="Contact.html" class="navlink navlink-contact">Contact</a>
+        <a href="shop.html" class="navlink navlink-shop" class="selected">Shop</a>
+        <a href="About.html" class="navlink navlink-about">About</a>
+        <a href="Blog.html" class="navlink navlink-blog">Blog</a>
+        <a href="Contact.html" class="navlink navlink-contact">Contact</a>
 
-        </nav>
-        <a href="" class="navlink-menu">Nav</a>
-        <a href="cart.html" class="navlink-cart"><img src="img/cart.svg" alt="Cart"></a>
-      </div>
+      </nav>
+      <a href="" class="navlink-menu">Nav</a>
+      <a href="cart.html" class="navlink-cart" title="Cart"><img src="img/icons/cart.svg" alt="Cart"></a>
+    </div>
     </header>
 
     <main>
-    <h1>Billing Info</h1>
+      <h1>Checkout</h1>
+
+      <h2>Billing Info</h2>
       <form method="post" action="#">
-            <label for="form-firstName">First Name</label>
-            <input type="text" id="form-firstName" placeholder="First Name" required>
+          <label for="form-firstName">First Name</label>
+          <input type="text" id="form-firstName" placeholder="First Name" required>
 
             <label for="form-lastName">Last Name</label>
             <input type="text" id="form-lastName" placeholder="Last Name" required>
 
-            <label for="form-email">Email:</label>
+            <label for="form-email">Email</label>
             <input type="email" id="form-email" name="email" placeholder="Email Address" required>
 
-            <label for="form-address">Billing Address:</label>
+            <label for="form-address">Billing Address</label>
             <input type="text" id="form-address" name="address" placeholder="Billing Address" required>
 
-            <label for="form-phone">Phone Number:</label>
+            <label for="form-phone">Phone Number</label>
             <input type="tel" id="form-phone" name="phone" placeholder="Phone Number" required>
+        </form>
 
-            <label>Credit Card Type:</label>
+        <h2>Credit Card Info</h2>
+        <form>
+            <radio>Same as billing info</radio>
+
+            <label>Credit Card Type</label>
             <select name="card-type" required>
               <option value="visa">Visa</option>
               <option value="mastercard">Mastercard</option>
             </select>
 
-            <label for="form-cardnumber">Card Number:</label>
+            <label for="form-cardnumber">Card Number</label>
             <input type="text" id="form-cardnumber" name="cardnumber" placeholder="Credit Card Number" required>
 
-            <label for="form-csc">Card Security Code:</label>
+            <label for="form-csc">Card Security Code</label>
             <input type="text" id="form-csc" name="csc" placeholder="Card Security Code" required>
 
             <label>Card Expiry Date</label>
             <input type="date" name="card-expiry" required>
 
-            <input class="button-nav" type="submit" value="Submit Order">
-
           </form>
+
+          <input class="button-nav" type="submit" value="Submit Order">
     </main>
 
-
     <footer>
-      <div class="row">
+      <div class="row wrapper">
 
         <address class="col-m4 info">
           <strong>Dirty Mouth Donuts</strong>
@@ -109,9 +115,9 @@
         <div class="col-m3 social-media">
           <h2>Follow Us</h2>
           <ul class="row no-resize">
-            <li class="col-m4"><a href="www.facebook.com" target="_blank"><img src="img/facebook.png" alt="Facebook"></a></li>
-            <li class="col-m4"><a href="www.twitter.com" target="_blank"><img src="img/twitter.png" alt="Twitter"></a></li>
-            <li class="col-m4"><a href="www.instagram.com" target="_blank"><img src="img/instagram.png" alt="Instagram"></a></li>
+            <li class="col-m4"><a href="www.facebook.com" target="_blank" title="Facebook"><img src="img/icons/facebook.png" alt="Facebook Icon"></a></li>
+            <li class="col-m4"><a href="www.twitter.com" target="_blank" title="Twitter"><img src="img/icons/twitter.png" alt="Twitter Icon"></a></li>
+            <li class="col-m4"><a href="www.instagram.com" target="_blank" title="Instagram"><img src="img/icons/instagram.png" alt="Instagram Icon"></a></li>
           </ul>
         </div>
       </div>

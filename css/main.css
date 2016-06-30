@@ -10,6 +10,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 1.15rem;
+  background: url("bkg/bkg-confetti.png");
 }
 
 section:not([id]) {
@@ -336,6 +337,11 @@ div.header {
 
 }
 
+main {
+  background: #FFF;
+  padding-bottom: 1rem;
+}
+
 
 .gallery > div {
   margin-bottom: 1em;
@@ -469,7 +475,30 @@ p.subtitle {
 
 .front-box {
   padding: 5em 0;
+  height: 15em;
+  text-align: center;
 }
+
+#announce-diy {
+}
+
+#announce-story {
+  background: url("bkg/announce-story.jpg");
+  background-size: cover;
+}
+
+#announce-blog {
+  background: url("bkg/announce-blog.jpg");
+  background-size: cover;
+}
+
+@media only screen and (max-width: 48em) {
+  .front-box {
+    height: 10em;
+  }
+
+}
+
 
 /*** Donut Item Post ***/
 
@@ -534,4 +563,8 @@ p.name {
   text-align: center;
   background-color: #79C9AD;
   color: white;
+}
+
+@media only screen and (min-width: 100em) {
+
 }

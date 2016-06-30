@@ -11,7 +11,7 @@ article {
 	/*margin-left: 50px;
 	margin-right: 50px;*/
 	margin-top: 20px;
-	
+
 }
 
 /*width: 100%; /*100% of the article's (wrapper) width; will adjust with article*/
@@ -25,6 +25,17 @@ article {
 	text-align: center;
 }
 
+.post h2 {
+	font-family: 'Bangers', 'Arial', sans-serif;
+	letter-spacing: 0.15em;
+	font-size: 2rem;
+	display: inline-block;
+	margin: 0.5em auto;
+	padding: 0.25em 0.5em;
+	background-color: #EF4B6D;
+	color:#FFF ;
+}
+
 .post p {
 	padding:10px;
 	margin-bottom: 15px;
@@ -36,13 +47,12 @@ article {
 .post p:last-child {
 	margin-bottom: 0;
 }
-
+/*
 .post img {
-	/*max-width: 75%;
-	min-width: 50%;*/
-	width: 100%;
+width: 100%;
 }
-
-.time {
+*/
+time {
 	background-color: white;
+	display: block
 }

@@ -114,6 +114,7 @@ nav.isOpen [class*="navlink"] {
     background-repeat: repeat-x;
     background-size: auto;
     border: none;
+    width: inherit;
     }
 
   .header-site nav {
@@ -174,6 +175,9 @@ nav.isOpen [class*="navlink"] {
 
 }
 
+@media only screen and (min-width: 100em) {
+}
+
 
 /**  Footer  **/
 
@@ -192,6 +196,7 @@ footer > div {
 
 footer ul {
   list-style: none;
+  margin: 0;
 }
 
 footer h2 {
