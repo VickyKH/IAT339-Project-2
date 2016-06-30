@@ -27,3 +27,10 @@ iframe {
 .map-address {
 	text-align: center;
 }
+
+/*Billing*/
+.bill-head {
+	color: #EF4B6D;
+	text-align: center;
+	font-size: 0.75em;
+}
