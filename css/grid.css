@@ -79,12 +79,12 @@ Media Query (condition) for DESKTOP, if it gets larger than 768px than can incre
 }
 
 /** Very large screens **/
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 70em) {
 
   /** Constrain the contents to the middle **/
   body {
     position: relative;
-    width: 60rem;
+    width: 70rem;
     margin-left: auto;
     margin-right: auto;
   }
