@@ -20,17 +20,19 @@
   <body>
 
     <header class="header-site">
-      <nav class="isOpen">
-        <a href="index.html" class="logo">
-          <img src="img/logo-sub.svg">
-        </a>
-        <a href="shop.html" class="navlink-shop">Shop</a>
-        <a href="About.html" class="navlink-about">About</a>
-        <a href="Blog.html" class="navlink-blog">Blog</a>
-        <a href="Contact.html" class="navlink-contact">Contact</a>
-      </nav>
-      <a href="#" class="navlink-menu">Menu</a>
-      <a href="cart.html" class="navlink-cart">Cart</a>
+      <div class="wrapper">
+        <nav class="isOpen">
+          <a href="index.html" class="logo">
+            <img src="img/logo-sub.svg" alt="Dirty Mouth Donuts - Cute As Hell">
+          </a>
+          <a href="shop.html" class="navlink navlink-shop" class="selected">Shop</a>
+          <a href="About.html" class="navlink navlink-about">About</a>
+          <a href="Blog.html" class="navlink navlink-blog">Blog</a>
+          <a href="Contact.html" class="navlink navlink-contact">Contact</a>
+        </nav>
+        <a href="" class="navlink-menu">Nav</a>
+        <a href="cart.html" class="navlink-cart"><img src="img/icons/cart.svg" alt="Cart"></a>
+      </div>
     </header>
 
     <main>
@@ -65,7 +67,7 @@
         <div class="clear-box col-m6">&nbsp;</div>
         <div class="total-price col-m6"><a href="Billing.html" class="button-teal">Checkout</a></div>
       </div>-->
-
+<!--
       <table class="cart">
         <thead>
           <th colspan="2">Item</th>
@@ -73,15 +75,15 @@
           <th>Price</th>
         </thead>
         <tr>
-          <td class="image"><img src="img/donut-pickle-before.png" alt="Pickle donut icon"></td>
+          <td class="image"><img src="img/donuts/donut-pickle-before.png" alt="Pickle donut icon"></td>
           <td class="name text">
             <p><a href="donut_pickle.html">Pickle</a></p>
-            <a href="" class="button-inverse">Delete</a></td>
+            <a href="" class="delete"><img src="img/icons/trash.svg" class="icon" alt="Delete"></a></td>
           <td class="quantity text"><p>2</p></td>
           <td class="price text"><p>$5</p></td>
         </tr>
         <tr>
-          <td class="image"><img src="img/donut-popmarsh-before.png" alt="Popcorn Marshmallow donut icon"></td>
+          <td class="image"><img src="img/donuts/donut-popmarsh-before.png" alt="Popcorn Marshmallow donut icon"></td>
           <td class="name text">
             <p><a href="donut_popmarsh.html">Popcorn Marshmallow</a></p>
             <p><a href="">Delete</a></p>
@@ -94,7 +96,39 @@
           <th class="total text">Total</th>
           <td class="total text"><p>$15</p></td>
         </tfoot>
-      </table>
+      </table>-->
+
+      <section class="cart">
+        <header>
+          <div class="item">Item</div>
+          <div class="quantity">Quantity</div>
+          <div class="price">Price</div>
+        </header>
+        <div>
+          <div class="item">
+            <div class="image"><img src="img/donuts/donut-pickle-before.png" alt="Pickle donut icon"></div>
+            <div class="name"><p><a href="donut_pickle.html">Pickle</a></p><a href="" class="delete"><img src="img/icons/trash.svg" class="icon" alt="Delete"></a></div>
+          </div>
+          <div class="quantity text"><p>2</p></div>
+          <div class="price text"><p>$5</p></div>
+        </div>
+        <div>
+          <div class="item">
+            <div class="image"><img src="img/donuts/donut-popmarsh-before.png" alt="Popcorn Marshmallow"></div>
+            <div class="name">
+              <p><a href="donut_popmarsh.html">Popcorn Marshmallow</a></p>
+              <a href="" class="delete"><img src="img/icons/trash.svg" class="icon" alt="Delete"></a>
+            </div>
+          </div>
+          <div class="quantity text"><p>2</p></div>
+          <div class="price text"><p>$5</p></div>
+        </div>
+        <footer>
+          <div class="total text">Total</div>
+          <div class="total text"><p>$15</p></div>
+        </footer>
+      </section>
+
 
       <div class="row">
         <a href="Billing.html" class="button col-m3">Checkout</a>

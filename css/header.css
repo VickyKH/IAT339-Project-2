@@ -14,8 +14,8 @@ header.header-site {
   z-index: 99;
   background: #333;
   position: fixed;
-  width: 100%;
   top: 0;
+  width: inherit;
 }
 
 .header-site nav {
@@ -114,7 +114,6 @@ nav.isOpen [class*="navlink"] {
     background-repeat: repeat-x;
     background-size: auto;
     border: none;
-    width: inherit;
     }
 
   .header-site nav {

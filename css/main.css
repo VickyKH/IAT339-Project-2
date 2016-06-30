@@ -11,6 +11,7 @@ body {
   margin: 0;
   font-size: 1.15rem;
   background: url("bkg/bkg-confetti.png");
+  width: 100%;
 }
 
 section:not([id]) {
@@ -297,6 +298,8 @@ h3 {
 
 table {
   margin: 1.5rem 0;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 table tr th {
@@ -337,10 +340,18 @@ div.header {
 
 }
 
+a.delete {
+  border: none;
+}
+
+.icon {
+  height: 1.5rem;
+  width: auto;
+}
+
 main {
   background: #FFF;
-  padding-bottom: 1rem;
-  padding-top: 4em;
+  padding: 4rem 1rem 2rem 1rem;
 }
 
 
@@ -431,7 +442,7 @@ p.subtitle {
 /*** Homepage ***/
 
 .announcement {
-  background-image: url(http://s3.amazonaws.com/spoonflower/public/design_thumbnails/0423/2766/rrpickle_pattern_repeat_shop_preview.png);
+  background-image: url("http://s3.amazonaws.com/spoonflower/public/design_thumbnails/0423/2766/rrpickle_pattern_repeat_shop_preview.png");
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -461,19 +472,6 @@ p.subtitle {
   margin-right: auto;
 }
 
-@media only screen and (max-width: 48em) {
-  .announcement .overlay-circle {
-    padding: 1em 0;
-    border-radius: 0;
-    width: 100%;
-    font-size: 1.2rem;
-  }
-
-  .announcement {
-    padding: 3em 0;
-  }
-}
-
 .front-box {
   padding: 5em 0;
   height: 15em;
@@ -492,14 +490,6 @@ p.subtitle {
   background: url("bkg/announce-blog.jpg");
   background-size: cover;
 }
-
-@media only screen and (max-width: 48em) {
-  .front-box {
-    height: 10em;
-  }
-
-}
-
 
 /*** Donut Item Post ***/
 
@@ -532,14 +522,6 @@ p.price {
   font-weight: bold;
 }
 
-@media only screen and (min-width: 48em) {
-  .product-image {
-    width: 100%;
-  }
-
-
-}
-
 /** Review Box **/
 
 .reviews {
@@ -564,6 +546,157 @@ p.name {
   text-align: center;
   background-color: #79C9AD;
   color: white;
+}
+
+/** Cart **/
+/*
+.table {
+  display: table;
+}
+
+.table > * {
+  display: table-row;
+}
+
+.table > * > * {
+  display: table-cell;
+}
+
+.table header {
+  display: table-header-group;
+}
+
+.table footer {
+  display: table-footer-group;
+}
+
+.cart header .item {
+  column-span: 2;
+}*/
+
+section.cart {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+section.cart footer {
+  background: none;
+  justify-content: flex-end;
+  align-items: stretch;
+  display: flex;
+}
+
+section.cart footer > * {
+  background: #AAA;
+  color: #FFF;
+  font-weight: bold;
+  flex: 16.66% 0;
+  padding: 1em;
+}
+
+section.cart header{
+  background: #AAA;
+  color: #FFF;
+  font-weight: bold;
+  padding: 1em;
+}
+
+section.cart > * {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  border: none;
+  margin: 0 0.25em 0 0;
+}
+
+section.cart .item {
+  display: flex;
+  flex-direction: row;
+  flex: 66.66%;
+}
+
+section.cart .item .image {
+  width: 40%;
+}
+
+section.cart .item .name {
+  align-items: center;
+  padding: 1em;
+}
+
+section.cart .quantity, section.cart .price {
+  flex: 16.66%;
+}
+
+@media only screen and (max-width: 500px) {
+
+section.cart header {
+    display: none;
+  }
+
+  section.cart footer > * {
+    flex: 50%;
+    font-size: 1.2rem;
+  }
+
+  section.cart > * {
+    display: block;
+    padding: 1em;
+  }
+
+  section.cart .item {
+    display: flex;
+    flex-direction: row;
+    flex: 100%;
+  }
+
+  section.cart .item .name{
+    width: 50%;
+  }
+
+  section.cart .item .image{
+    width: 50%;
+  }
+
+  section.cart .quantity, section.cart .price{
+    padding-left: 50%;
+    position: relative;
+  }
+
+  section.cart .quantity::before, section.cart .price::before {
+    position: absolute;
+    left: 1em;
+    top: 0.25em;
+    font-weight: bold;
+  }
+  section.cart .quantity::before {content:"Quantity";}
+  section.cart .price::before {content:"Price";}
+}
+
+
+/**  Media Queries  */
+
+@media only screen and (max-width: 48em) {
+  .announcement .overlay-circle {
+    padding: 1em 0;
+    border-radius: 0;
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .announcement {
+    padding: 3em 0;
+  }
+
+  .product-image {
+    width: 100%;
+  }
+
+  .front-box {
+    height: 10em;
+  }
 }
 
 @media only screen and (min-width: 100em) {
