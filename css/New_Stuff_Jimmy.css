@@ -1,7 +1,8 @@
 /*About*/
 .About_Banner {
-	/*background-color: #79C9AD;*/
-	background-image: url(https://s-media-cache-ak0.pinimg.com/736x/02/90/d0/0290d0a3a5bc4b438765397d4d6cd4ad.jpg);
+	/*background-color: #DDD;*/
+	/*background-image: url(https://s-media-cache-ak0.pinimg.com/736x/02/90/d0/0290d0a3a5bc4b438765397d4d6cd4ad.jpg);*/
+	background-image: url(https://s-media-cache-ak0.pinimg.com/564x/d0/5a/2b/d05a2b28240b46468b90a0d88345aec9.jpg);
 	text-align: center;
 }
 
@@ -9,12 +10,11 @@
 	list-style: none;
 }
 
-.About_List li {
+.About_List h3 {
+	display: inline-block;
+ 	margin: 0.5em auto;
+  	padding: 0.25em 0.5em;
 	background-color: white;
-}
-
-.about-head {
-	color: #EF4B6D;
 }
 
 /*Contact*/

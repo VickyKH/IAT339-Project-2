@@ -294,6 +294,17 @@ h2 {
   margin: 1em 0;
 }
 
+.bolderH2 {
+  font-family: 'Bangers', 'Arial', sans-serif;
+  letter-spacing: 0.15em;
+  font-size: 2rem;
+  display: inline-block;
+  margin: 0.5em auto;
+  padding: 0.25em 0.5em;
+  background-color: #EF4B6D;
+  color:#FFF ;
+}
+
 
 h3 {
   font-family: 'Permanent Marker', cursive;
@@ -407,7 +418,7 @@ p.subtitle {
   color:#000;
   /*background-color: rgba(255,255,255,0.8);*/
   background-color: rgb(255,255,255);
-  border: 5px solid #79C9AD;
+  border: 5px solid #EF4B6D; /*#79C9AD;*/
   -webkit-border-radius:0.75em;
   -moz-border-radius:0.75em;
   border-radius:0.75em;
@@ -418,12 +429,12 @@ p.subtitle {
   content:"";
   position:absolute;
   bottom:-1em; /* value = - border-top-width - border-bottom-width */
-  left:46%; /* controls horizontal position */
+  left:5%; /* controls horizontal position */
   border-width:1em 1em 0; /* vary these values to change the angle of the vertex */
   border-style:solid;
   /*border-color:rgba(255,255,255,0.8) transparent;*/
   /*border-color:rgb(255,255,255) transparent;*/
-  border-color: #79C9AD transparent;
+  border-color: #EF4B6D transparent;
   /* reduce the damage in FF3.0 */
   display:block;
   width:0;
@@ -533,7 +544,9 @@ p.price {
 .reviews {
   padding: 1em;
   /*background: #DDD;*/
-  background-image: url(../img/dinoDonutBG.jpg);
+  /*background-image: url(../img/dinoDonutBG.jpg);*/
+  background-image: url(https://s-media-cache-ak0.pinimg.com/564x/d0/5a/2b/d05a2b28240b46468b90a0d88345aec9.jpg);
+  /*text-align: center;*/
 }
 
 div.quote {
@@ -548,9 +561,11 @@ p.name {
   text-transform: uppercase;
   letter-spacing: 0.235em;
   font-style: normal;
-  display: block;
   text-align: center;
-  background-color: #79C9AD;
+  display: inline-block;
+  margin: 0.5em auto;
+  padding: 0.25em 0.5em;
+  background-color: #EF4B6D;
   color: white;
 }
 
