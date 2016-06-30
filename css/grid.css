@@ -63,6 +63,11 @@ and have a padding of 15px */
     width: 100%;
   }
 
+  .col-m8 {
+    width: 100%;
+  }
+
+
   .no-resize .col-m4 {
     width: 33.33%;
   }

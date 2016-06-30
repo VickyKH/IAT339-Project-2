@@ -12,12 +12,13 @@ body {
   font-size: 1.15rem;
   background: url("bkg/bkg-confetti.png");
   width: 100%;
+  border: 1px solid #DDD;
 }
 
 section:not([id]) {
   margin: 1em 0;
   padding: 1em 0;
-  border-bottom: 1px solid #DDD;
+/**  border-bottom: 1px solid #DDD;**/
 }
 
 .section-head {
@@ -163,8 +164,8 @@ a:hover, a:focus {
 /* STYLING FOR FILL FORM */
 form {
   font-size: 1.75em;
-  color: #FFF;
-  background-color: #333;
+  color: #333;
+  background-color: #DDD;
   padding: 1em;
 }
 
@@ -224,6 +225,11 @@ ul li, ol li {
   margin: 0.5em 0;
 }
 
+iframe {
+  margin: 0;
+  padding: 0;
+  height: 10em;
+}
 
 /* STYLING FOR GALLERY */
 img {
@@ -351,7 +357,7 @@ a.delete {
 
 main {
   background: #FFF;
-  padding: 4rem 1rem 2rem 1rem;
+  padding: 10rem 2rem 2rem 2rem;
 }
 
 
@@ -639,11 +645,14 @@ section.cart header {
   section.cart footer > * {
     flex: 50%;
     font-size: 1.2rem;
+    background: none;
+    color: #AAA;
   }
 
   section.cart > * {
     display: block;
     padding: 1em;
+    border-bottom: 1px solid #AAA;
   }
 
   section.cart .item {
@@ -679,6 +688,10 @@ section.cart header {
 /**  Media Queries  */
 
 @media only screen and (max-width: 48em) {
+  main {
+    padding: 4rem 1rem 1rem 1rem;
+  }
+
   .announcement .overlay-circle {
     padding: 1em 0;
     border-radius: 0;
