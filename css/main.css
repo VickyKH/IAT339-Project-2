@@ -119,6 +119,11 @@ section {
   border-color:  #EF4B6D;
 }
 
+figure {
+  padding: 0;
+  margin: 0;
+}
+
 /* Styling for the button with span and arrow pops out */
 /**
 .button-nav span {
@@ -338,14 +343,6 @@ div.header {
   margin: 1em;
 }
 
-@media (max-width: 555px) {
-  .search-options {
-    position: absolute;
-    width: 100%;
-  }
-
-}
-
 a.delete {
   border: none;
 }
@@ -380,13 +377,6 @@ main {
 label {
   text-transform: uppercase;
   letter-spacing: 0.235em;
-}
-
-@media only screen and (min-width: 555px) {
-  .search-options {
-    position: relative;
-  }
-
 }
 
 p.subtitle {
@@ -636,7 +626,9 @@ section.cart .quantity, section.cart .price {
   flex: 16.66%;
 }
 
-@media only screen and (max-width: 500px) {
+/**  Media Queries  */
+
+@media only screen and (max-width: 35em) {
 
 section.cart header {
     display: none;
@@ -685,11 +677,25 @@ section.cart header {
 }
 
 
-/**  Media Queries  */
+@media (max-width: 35em) {
+  .search-options {
+    position: absolute;
+    width: 100%;
+  }
+
+}
+
+
+@media only screen and (min-width: 35em) {
+  .search-options {
+    position: relative;
+  }
+
+}
 
 @media only screen and (max-width: 48em) {
   main {
-    padding: 4rem 1rem 1rem 1rem;
+    padding: 4rem 0 2rem 0;
   }
 
   .announcement .overlay-circle {

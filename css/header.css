@@ -104,7 +104,7 @@ nav.isOpen [class*="navlink"] {
 }*/
 
 /** Header (large screen sizes) **/
-@media only screen and (min-width: 48em) {
+@media (min-width: 48em) {
 
   header.header-site {
     margin-bottom: -4em;

@@ -8,9 +8,7 @@ main {
 }
 
 article {
-	/*margin-left: 50px;
-	margin-right: 50px;*/
-	margin-top: 20px;
+	margin-top: 1.25em;
 
 }
 
@@ -20,8 +18,8 @@ article {
 	/*background-image: url(https://s-media-cache-ak0.pinimg.com/736x/02/90/d0/0290d0a3a5bc4b438765397d4d6cd4ad.jpg );*/
 	background-image: url(../img/dinoDonutBG_Invert.jpg);
 );
-	padding: 20px;
-	margin-bottom: 30px;
+	padding: 1.25em;
+	margin-bottom: 1.25em;
 	text-align: center;
 }
 
@@ -37,10 +35,16 @@ article {
 }
 
 .post p {
-	padding:10px;
-	margin-bottom: 15px;
+	padding:1em;
+	margin-bottom: 1em;
 	text-align: left;
 	background-color: white;
+}
+
+@media only screen and (max-width: 48em) {
+	.post {
+		padding: 0;
+	}
 }
 
 /*last paragraph remove margin at bottom*/
