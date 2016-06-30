@@ -327,89 +327,56 @@
           <h3>CSS selector:</h3>
 
             <ul>
-              <li>.img</li>
-              <li>.desc</li>
+              <li>.gallery</li>
+              <li>.product</li>
+              <li>.name</li>
             </ul>
 
           <h3>Sample code:</h3>
 
-            <code>&lt;div class="img"&gt;</code>
-              <code>&lt;a target="_blank" href="img/DeadElvis.jpg"&gt;</code>
-                <code>&lt;img src="img/DeadElvis.jpg" alt="Donut" width="300" height="225"&gt;</code>
-              <code>&lt;/a&gt;</code>
-              <code>&lt;div class="desc">Dead Elvis&lt;/div&gt;</code>
-            <code>&lt;/div&gt;</code>
+          <code>&lt;div class="gallery"&gt; // Defines beginning of gallery</code>
+            <code>&lt;a href="donut.html"&gt; // Product</code>
+              <code>&lt;img src="donut-befre.png" alt="Donut"&gt;</code>
+              <code>&lt;p class="name">Donut Name&lt;/p&gt;</code>
+            <code>&lt;/a&gt;</code>
+          <code>&lt;/div&gt;</code>
 
           <h3>Rendered element:</h3>
-          <div class="row">
-            <div class="img col-m4">
-              <a target="_blank" href="img/DeadElvis.jpg">
-                <img src="img/DeadElvis.jpg" alt="Donut" width="300" height="225">
-              </a>
-              <div class="desc">Dead Elvis</div>
-            </div>
+          <div class="gallery">
+            <div class="row">
 
-            <div class="img col-m4">
-              <a target="_blank" href="img/LemonSichuan.jpg">
-                <img src="img/LemonSichuan.jpg" alt="Donut" width="300" height="225">
-              </a>
-              <div class="desc">Lemon Sichuan</div>
-            </div>
+              <div class="product col-m3">
+                <a href="donut_pickle.html" title="Pickle Donut">
+                  <img src="img/donut-pickle-before.png" alt="Pickle Donut" class="hover-donut">
+                  <p class="name">Pickle</p>
+                </a>
+                <p class="tag-featured">Featured</p>
+              </div>
 
-            <div class="img col-m4">
-              <a target="_blank" href="img/Licorice.jpg">
-                <img src="img/Licorice.jpg" alt="Donut" width="300" height="225">
-              </a>
-              <div class="desc">Licorice</div>
-            </div>
-          </div>
+              <div class="product col-m3">
+                <a href="donut_popmarsh.html" title="Popcorn Marshmallow Donut">
+                  <img src="img/donut-popmarsh-before.png" alt="Popcorn Marshmallow Donut" class="hover-donut">
+                  <p class="name">Popcorn Marshmallow</p>
+                </a>
+                <p class="tag-new">New</p>
+              </div>
 
-          <div class="row">
-            <div class="img col-m4">
-              <a target="_blank" href="img/MapleBacon.jpg">
-                <img src="img/MapleBacon.jpg" alt="Donut" width="300" height="225">
-              </a>
-              <div class="desc">Maple Bacon</div>
-            </div>
+              <div class="product col-m3">
+                <a href="donut_vansoy.html" title="Vanilla Soy Donut">
+                  <img src="img/donut-vansoy-before.png" alt="Vanilla Soy Donut" class="hover-donut">
+                  <p class="name">Vanilla Soy Sauce</p>
+                </a>
+                <p class="tag-hot">Hot</p>
+              </div>
 
-            <div class="img col-m4">
-              <a target="_blank" href="img/OldDirtyBastard.jpg">
-                <img src="img/OldDirtyBastard.jpg" alt="Donut" width="300" height="225">
-              </a>
-              <div class="desc">Old Dirty Bastard</div>
-            </div>
+              <div class="product col-m3">
+                <a href="donut.html">
+                  <img src="img/donut-before.png" alt="Donut" class="hover-donut">
+                  <p class="name">Donut</p>
+                </a>
+              </div>
+            </div> <!--- End of row -->
 
-            <div class="img col-m4">
-              <a target="_blank" href="img/PineappleBasil.jpg">
-                <img src="img/PineappleBasil.jpg" alt="Donut" width="300" height="225">
-              </a>
-              <div class="desc">Pineapple Basil</div>
-            </div>
-          </div>
-
-          <div clas="row">
-
-            <div class="img col-m4">
-              <a target="_blank" href="img/Poi.jpg">
-                <img src="img/Poi.jpg" alt="Donut" width="300" height="225">
-              </a>
-              <div class="desc">Poi</div>
-            </div>
-
-            <div class="img col-m4">
-              <a target="_blank" href="img/Rainbow.jpeg">
-                <img src="img/Rainbow.jpeg" alt="Donut" width="300" height="225">
-              </a>
-              <div class="desc">Rainbow</div>
-            </div>
-
-            <div class="img col-m4">
-              <a target="_blank" href="img/Smores.jpg">
-                <img src="img/Smores.jpg" alt="Donut" width="300" height="225">
-              </a>
-              <div class="desc">S'mores</div>
-            </div>
-          </div>
       </section>
     </section>
 

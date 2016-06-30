@@ -117,6 +117,7 @@ section {
 }
 
 /* Styling for the button with span and arrow pops out */
+/**
 .button-nav span {
   cursor: pointer;
   display: inline-block;
@@ -141,15 +142,16 @@ section {
   opacity: 1;
   right: 0;
 }
+**/
 
-/* Styleing for links inside text */
+/* Styling for links inside text */
 a {
   color: #EF4B6D;
-  -webkit-transition: color 0.5s ease-out;
-  transition: color 0.5s ease-out;
   text-decoration: none;
   border-bottom: 1px solid;
   padding: 0.1em;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
 }
 
 a:hover, a:focus {
@@ -226,7 +228,7 @@ img {
   width: 100%;
   height: auto;
 }
-
+/**
 .img {
   border: 0.25em solid #EF4B6D;
   display: inline-block;
@@ -255,7 +257,7 @@ img {
   font-size: 1.5rem;
   background-color: white;
 }
-
+**/
 h1 {
   font-family: 'Bangers', 'Arial', sans-serif;
   letter-spacing: 0.15em;
@@ -368,7 +370,11 @@ p.subtitle {
 }
 
 
-/** CSS speech bubble from http://nicolasgallagher.com/pure-css-speech-bubbles/demo/ **/
+/*************
+  CSS speech bubble from
+  http://nicolasgallagher.com/pure-css-speech-bubbles/demo/
+
+***************/
 
 .bubble {
   position:relative;
@@ -399,6 +405,22 @@ p.subtitle {
   width:0;
 }
 
+.overlay-box {
+  background-color: rgba(5,5,5,0.7);
+  padding: 0.5em;
+}
+
+.overlay-circle {
+  background-color: rgba(5,5,5,0.7);
+  padding: 3em;
+  border-radius: 50%;
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+
+
 /*** Homepage ***/
 
 .announcement {
@@ -426,28 +448,13 @@ p.subtitle {
   color: #FFF;
 }
 
-.overlay-box {
-  background-color: rgba(5,5,5,0.7);
-  padding: 0.5em;
-}
-
-.overlay-circle {
-  background-color: rgba(5,5,5,0.7);
-  padding: 3em;
-  border-radius: 50%;
-  width: auto;
-  height: auto;
-  text-align: center;
-}
-
-
 .announcement .overlay-circle {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 48em) {
   .announcement .overlay-circle {
     padding: 1em 0;
     border-radius: 0;
@@ -465,10 +472,6 @@ p.subtitle {
 }
 
 /*** Donut Item Post ***/
-
-main {
-  display: flex wrap;
-}
 
 div.description {
   position: relative;
@@ -499,7 +502,7 @@ p.price {
   font-weight: bold;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48em) {
   .product-image {
     width: 100%;
   }

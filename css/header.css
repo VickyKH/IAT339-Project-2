@@ -4,7 +4,7 @@
 
 ******************************/
 
-/** Header (Mobile Version) **/
+/** Header (small screen version) **/
 main {
   padding-top: 3rem;
 }
@@ -15,7 +15,7 @@ header.header-site {
   background: #333;
   position: fixed;
   width: 100%;
-  top: 1;
+  top: 0;
 }
 
 .header-site nav {
@@ -27,6 +27,7 @@ header.header-site {
   position: relative;
   margin: 0;
   padding: 0;
+  -webkit-transition: margin-bottom 1s;
   transition: margin-bottom 1s;
 }
 
@@ -35,7 +36,6 @@ header.header-site {
   font-family: 'Bangers', 'Arial', sans-serif;
   letter-spacing: 0.15em;
   font-size: 1.25rem;
-  color: #FFF;
 }
 
 .header-site nav a:hover, .header-site nav a:focus {
@@ -43,16 +43,13 @@ header.header-site {
   color: #79C9AD;
 }
 
-.header-site nav a.selected {
-  color: #79C9AD;
-}
-
 nav .logo {
   align-self: flex-center;
   width: 11em;
   padding: 0.5em;
-  transition: all 0.5s;
   background: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 nav .logo:hover {
@@ -69,6 +66,8 @@ nav .logo:hover {
   text-transform: uppercase;
   font-family: 'Didact Gothic', 'Verdana', sans-serif;
   font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0.15em;
 }
 
 .navlink-cart {
@@ -86,24 +85,26 @@ nav .logo:hover {
 .navlink-shop, .navlink-about, .navlink-blog, .navlink-contact {
   width: 100%;
   padding: 0.5em;
-  border-bottom: 1px solid #DDD;
   padding-left: 1em;
+  background-color: #EF4B6D;
+  color: #333;
 }
 
-nav.isClosed {
-  margin-bottom: -9em;
+.header-site nav a.selected {
+  background-color: #79C9AD;
 }
 
+/*
 nav.isClosed [class*="navlink"] {
   visibility: collapse;
 }
 
 nav.isOpen [class*="navlink"] {
   visibility: visible;
-}
+}*/
 
-/** Media query for the extended header. **/
-@media only screen and (min-width: 768px) {
+/** Header (large screen sizes) **/
+@media only screen and (min-width: 48em) {
 
   header.header-site {
     margin-bottom: -4em;
@@ -136,40 +137,39 @@ nav.isOpen [class*="navlink"] {
     width: 12em;
   }
 
+  /** Align logo words to mouth bkg **/
   .logo img {
     margin: 3em 0 0 0.25em;
   }
 
   nav [class*="navlink"] {
     margin-bottom: 2em;
+    background: none;
+    width: auto;
+    color: #DDD;
+    border-bottom: none;
   }
 
   .navlink-menu {
     visibility: hidden;
   }
 
+  /** Change link order **/
+
   .navlink-shop {
     order: 1;
-    border-bottom: none;
-    width: auto;
   }
 
   .navlink-about {
     order: 2;
-    border-bottom: none;
-    width: auto;
   }
 
   .navlink-blog {
     order: 4;
-    border-bottom: none;
-    width: auto;
   }
 
   .navlink-contact {
     order: 5;
-    border-bottom: none;
-    width: auto;
   }
 
 }
