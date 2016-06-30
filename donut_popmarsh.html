@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Popcorn Marshmallow</title>
 
     <!-- CSS -->
     <link href="css/header.css" rel="stylesheet">
@@ -20,17 +20,21 @@
   <body>
 
     <header class="header-site">
+      <div class="wrapper">
       <nav class="isOpen">
         <a href="index.html" class="logo">
-          <img src="img/logo-sub.svg">
+          <img src="img/logo-sub.svg" alt="Dirty Mouth Donuts - Cute As Hell">
         </a>
-        <a href="shop.html" class="navlink-shop">Shop</a>
-        <a href="About.html" class="navlink-about">About</a>
-        <a href="Blog.html" class="navlink-blog">Blog</a>
-        <a href="Contact.html" class="navlink-contact">Contact</a>
+
+        <a href="shop.html" class="navlink navlink-shop" class="selected">Shop</a>
+        <a href="About.html" class="navlink navlink-about">About</a>
+        <a href="Blog.html" class="navlink navlink-blog">Blog</a>
+        <a href="Contact.html" class="navlink navlink-contact">Contact</a>
+
       </nav>
-      <a href="#" class="navlink-menu">Menu</a>
-      <a href="cart.html" class="navlink-cart">Cart</a>
+      <a href="" class="navlink-menu">Nav</a>
+      <a href="cart.html" class="navlink-cart"><img src="img/icons/cart.svg" alt="Cart"></a>
+    </div>
     </header>
 
     <main>
@@ -38,7 +42,7 @@
 
       <div class="row">
         <div class="product-image col-m6">
-          <img src="img/popcornmarshmallow.jpg" alt="Popcorn Marshmallow">
+          <img src="img/donuts/popcornmarshmallow.jpg" alt="Popcorn Marshmallow">
         </div>
 
         <div class="description col-m6">
@@ -66,16 +70,25 @@
     </main>
 
     <footer>
-      <div class="row">
+      <div class="row wrapper">
 
-        <div class="col-m6 info">
+        <address class="col-m4 info">
           <strong>Dirty Mouth Donuts</strong>
           <br>5555 W. Pender Street
           <br>Vancouver, BC V5X 5X5
           <br>Open Daily 8:30am – 10pm
+        </address>
+
+        <div class="col-m2">
+          <h2>Deliverables</h2>
+          <nav>
+            <a href="Style_guide.html">Style Guide</a>
+            <a href="https://github.com/VickyKH/IAT339-Project-2">GitHub Repo</a>
+            <a href="Citations.html">Citations</a>
+          </nav>
         </div>
 
-        <div class="col-m3">
+        <div class="col-m2">
           <h2>Site Map</h2>
           <nav>
             <a href="shop.html">Shop</a>
@@ -87,10 +100,10 @@
 
         <div class="col-m3 social-media">
           <h2>Follow Us</h2>
-          <ul class="row">
-            <li class="col-m4"><a href="www.facebook.com" target="_blank"><img src="img/facebook.png" alt="Facebook"></a></li>
-            <li class="col-m4"><a href="www.twitter.com" target="_blank"><img src="img/twitter.png" alt="Twitter"></a></li>
-            <li class="col-m4"><a href="www.instagram.com" target="_blank"><img src="img/instagram.png" alt="Instagram"></a></li>
+          <ul class="row no-resize">
+            <li class="col-m4"><a href="https://www.facebook.com/" target="_blank" title="Facebook"><img src="img/icons/facebook.png" alt="Facebook Icon"></a></li>
+            <li class="col-m4"><a href="https://www.twitter.com" target="_blank" title="Twitter"><img src="img/icons/twitter.png" alt="Twitter Icon"></a></li>
+            <li class="col-m4"><a href="https://www.instagram.com" target="_blank" title="Instagram"><img src="img/icons/instagram.png" alt="Instagram Icon"></a></li>
           </ul>
         </div>
       </div>

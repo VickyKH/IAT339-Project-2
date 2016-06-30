@@ -16,10 +16,16 @@ article {
 
 .post {
 	/*background-image: url(https://s-media-cache-ak0.pinimg.com/736x/02/90/d0/0290d0a3a5bc4b438765397d4d6cd4ad.jpg );*/
+<<<<<<< HEAD
 	background-image: url(../img/dinoDonutBG_Invert.jpg);
 );
 	padding: 1.25em;
 	margin-bottom: 1.25em;
+=======
+	background-image: url(https://s-media-cache-ak0.pinimg.com/564x/d0/5a/2b/d05a2b28240b46468b90a0d88345aec9.jpg);
+	padding: 20px;
+	margin-bottom: 30px;
+>>>>>>> origin/master
 	text-align: center;
 }
 
@@ -38,7 +44,7 @@ article {
 	padding:1em;
 	margin-bottom: 1em;
 	text-align: left;
-	background-color: white;
+	/*background-color: white;*/
 }
 
 @media only screen and (max-width: 48em) {
@@ -57,6 +63,10 @@ width: 100%;
 }
 */
 time {
+	/*background-color: white;*/
+	display: block;
+}
+
+.blog-bg {
 	background-color: white;
-	display: block
 }
