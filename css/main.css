@@ -385,9 +385,10 @@ main {
   padding: 1em;
 }
 
-label {
-  text-transform: uppercase;
-  letter-spacing: 0.235em;
+.product p.name {
+  display: block;
+  background-color: #AAA;
+  line-height: normal;
 }
 
 p.subtitle {
@@ -480,12 +481,33 @@ p.subtitle {
 }
 
 .front-box {
-  padding: 5em 0;
   height: 15em;
   text-align: center;
 }
 
+.front-box h2 {
+  margin: 0;
+  background: #333;
+  display: inline-block;
+  font-size: 1.25rem;
+  padding: 0.25em 0.5em;
+}
+
+.front-box a {
+  color: #333;
+}
+
+.front-box a:hover {
+  color: #FFF;
+}
+
+.front-box h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
 #announce-diy {
+  background: url("bkg/bkg-donut.jpg");
 }
 
 #announce-story {
@@ -502,15 +524,27 @@ p.subtitle {
 
 div.description {
   position: relative;
+  padding: 0 1em;
 }
 
 [class*="tag"] {
-  background: #AAA;
   display: inline-block;
   padding: 0 0.5em;
   position: absolute;
   top: 0;
   right: 0;
+  color: #EF4B6D;
+  background-color: #DDD;
+}
+
+.tag-featured {
+  background: #79C9AD;
+  color: #FFF;
+}
+
+.tag-hot, .tag-new  {
+  background-color: #EF4B6D;
+  color: #FFF;
 }
 
 .product {
@@ -613,6 +647,11 @@ section.cart header{
   padding: 1em;
 }
 
+.cart header h2 {
+  color: #FFF;
+  font-size: 1rem;
+}
+
 section.cart > * {
   display: flex;
   flex-direction: row;
@@ -639,6 +678,13 @@ section.cart .item .name {
 
 section.cart .quantity, section.cart .price {
   flex: 16.66%;
+}
+
+div.checkout {
+}
+
+section.nomargin {
+  margin: 0;
 }
 
 /**  Media Queries  */

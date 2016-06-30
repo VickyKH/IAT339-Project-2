@@ -92,6 +92,7 @@ nav .logo:hover {
 
 .header-site nav a.selected {
   background-color: #79C9AD;
+  color: #FFF;
 }
 
 /*

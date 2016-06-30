@@ -27,7 +27,7 @@
           <img src="img/logo-sub.svg" alt="Dirty Mouth Donuts - Cute As Hell">
         </a>
 
-        <a href="shop.html" class="navlink navlink-shop" class="selected">Shop</a>
+        <a href="shop.html" class="navlink navlink-shop">Shop</a>
         <a href="About.html" class="navlink navlink-about">About</a>
         <a href="Blog.html" class="navlink navlink-blog">Blog</a>
         <a href="Contact.html" class="navlink navlink-contact">Contact</a>
@@ -135,8 +135,9 @@
 
               <div class="col-m6">
                 <label class="bill-head">Payment Info</label>
-                <label>Credit Card Type:</label>
-                <select name="card-type" required>
+
+                <label for="form-card-type">Credit Card Type:</label>
+                <select name="card-type" id="form-card-type" size="1">
                   <option value="visa">Visa</option>
                   <option value="mastercard">Mastercard</option>
                 </select>
