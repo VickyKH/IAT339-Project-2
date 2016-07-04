@@ -11,8 +11,12 @@ body {
   margin: 0;
   font-size: 18.5px; font-size: 1.15rem;
   background: url("bkg/bkg-confetti.png") fixed;
-  width: 100
+  width: 100%;
   border: 1px solid #DDD;
+}
+
+.wrapper {
+  width: inherit;
 }
 
 section:not([id]) {
@@ -361,7 +365,6 @@ a.delete {
 
 .main {
   background: #FFFFFF;
-  padding-bottom: 32px; padding-bottom: 2rem;
   transition: margin ease-out 0.5s;
 }
 

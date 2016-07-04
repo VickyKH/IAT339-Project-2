@@ -14,10 +14,6 @@
   content: "";
 }
 
-div.wrapper {
-  width: 100%;
-}
-
 [class*="col-"] {
 	float: left;
   /*text-align: center;*/
@@ -55,12 +51,25 @@ div.wrapper {
     width: 100%;
   }
 
-}
-
-@media (max-width: 48em) {
   .padding > * {
     padding: 0;
   }
+
+}
+
+@media (max-width: 48em) {
+
+  body {
+    font-size: 0.98rem;
+  }
+
+  .padding {
+    padding: 0.5rem;
+  }
+
+    .padding > * {
+      padding: 0.5rem;
+    }
 
   .col-m2 {
     width: 50%;
@@ -70,11 +79,7 @@ div.wrapper {
     width: 50%;
   }
 
-  .col-m4 {
-    width: 100%;
-  }
-
-  .col-m8 {
+  .col-m4, .col-m5, .col-m7, .col-m8, .col-m9 {
     width: 100%;
   }
 
@@ -92,7 +97,7 @@ div.wrapper {
 @media only screen and (min-width: 70em) {
 
   /** Constrain the contents to the middle **/
-  div.wrapper {
+  body {
     /*position: relative;*/
     width: 1120px; width: 70rem;
     margin-left: auto;
@@ -103,10 +108,10 @@ div.wrapper {
 @media only screen and (min-width: 100em) {
 
   /** Switch to a layout that would resize with the screen  **/
-/*div.wrapper {
+  div.wrapper {
     width: 70%;
     font-size: 120%;
     margin-left: 15%;
-    margin-right: 15%;*/
+    margin-right: 15%;
   }
 }

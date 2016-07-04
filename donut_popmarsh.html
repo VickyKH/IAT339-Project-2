@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dirty Mouth Donuts: Cute As Hell // Shop // Popcorn Marshmallow Donut</title>
 
     <!-- CSS -->
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
@@ -17,60 +18,61 @@
 
   </head>
 
+
   <body>
-
-    <header class="header-site">
-      <div class="wrapper">
-      <nav class="isOpen">
-        <a href="index.html" class="logo">
-          <img src="img/logo-sub.svg" alt="Dirty Mouth Donuts - Cute As Hell">
-        </a>
-
-        <a href="shop.html" class="navlink navlink-shop selected">Shop</a>
-        <a href="About.html" class="navlink navlink-about">About</a>
-        <a href="Blog.html" class="navlink navlink-blog">Blog</a>
-        <a href="Contact.html" class="navlink navlink-contact">Contact</a>
-
-      </nav>
-      <a href="" class="navlink-menu">Nav</a>
-      <a href="cart.html" class="navlink-cart"><img src="img/icons/cart.svg" alt="Cart"></a>
-    </div>
+    <header>
+      <div class="header-site">
+        <nav>
+          <div class="nav">
+            <a href="index.html" class="logo">
+              <img src="img/logo-sub.svg" alt="Dirty Mouth Donuts - Cute As Hell">
+            </a>
+            <a href="shop.html" class="navlink navlink-shop selected">Shop</a>
+            <a href="About.html" class="navlink navlink-about">About</a>
+            <a href="Blog.html" class="navlink navlink-blog">Blog</a>
+            <a href="Contact.html" class="navlink navlink-contact">Contact</a>
+          </div>
+        </nav>
+        <a href="" class="navlink-menu">Nav</a>
+        <a href="cart.html" class="navlink-cart"><img src="img/icons/cart.svg" alt="Cart"></a>
+      </div>
     </header>
 
     <main>
-      <h1>Shop</h1>
+      <div class="main headerOpen">
+        <h1>Shop</h1>
 
-      <div class="row">
-        <div class="product-image col-m6">
-          <img src="img/donuts/popcornmarshmallow.jpg" alt="Popcorn Marshmallow">
-        </div>
+        <div class="row padding">
+          <div class="product-image col-m6">
+            <img src="img/donuts/popcornmarshmallow.jpg" alt="Popcorn Marshmallow">
+          </div>
 
-        <div class="description col-m6">
-          <h2>Popcorn &amp; Marshmallow</h2>
-          <p class="tag-feature">Hot</p>
-          <p class="price">$5</p>
-          <a href="cart.html" class="button">Buy Now</a>
-          <p><strong>Get a mouth full of corn and sugar. This mixture of marshmallow and popcorn will surprise even the corniest of people.</strong></p>
-          <p>This donut uses corn meal fried dough which gives it a texture similar to corn bread but slightly toasted. At its center is a marshmallow filling that oozes out once bitten. Finally, it is glazed with a chocolate ganache and topped off with some popcorn and marshmallow. So don’t feel ashamed to stuff your face cuz baby, the theaters were made for stuffing popcorn and marshmallow in your Dirty Mouth.</p>
-        </div>
-    </div>
-
-    <div class="reviews">
-      <h1>Word on the street</h1>
-      <div class="quote">
-        <p class="bubble">At first I was hesitant but now I'm hooked!</p>
-        <p class="name">Julie, Alaska</p>
+          <div class="description col-m6">
+            <h2>Popcorn &amp; Marshmallow</h2>
+            <p class="tag-hot">Hot</p>
+            <p class="price">$5</p>
+            <a href="cart.html" class="button">Buy Now</a>
+            <p><strong>Get a mouth full of corn and sugar. This mixture of marshmallow and popcorn will surprise even the corniest of people.</strong></p>
+            <p>This donut uses corn meal fried dough which gives it a texture similar to corn bread but slightly toasted. At its center is a marshmallow filling that oozes out once bitten. Finally, it is glazed with a chocolate ganache and topped off with some popcorn and marshmallow. So don’t feel ashamed to stuff your face cuz baby, the theaters were made for stuffing popcorn and marshmallow in your Dirty Mouth.</p>
+          </div>
       </div>
-      <div class="quote">
-        <p class="bubble">Who would've thought a pickle and a donut would go so well together?</p>
-        <p class="name">Tony, California</p>
+
+      <div class="reviews">
+        <h2 class="bolderH2">Word on the street</h2>
+        <div class="quote">
+          <p class="bubble">At first I was hesitant but now I'm hooked!</p>
+          <p class="name">Julie, Alaska</p>
+        </div>
+        <div class="quote">
+          <p class="bubble">Who would've thought a pickle and a donut would go so well together?</p>
+          <p class="name">Tony, California</p>
+        </div>
       </div>
     </div>
-
     </main>
 
     <footer>
-      <div class="row wrapper">
+      <div class="row footer">
 
         <address class="col-m4 info">
           <strong>Dirty Mouth Donuts</strong>
@@ -108,8 +110,8 @@
         </div>
       </div>
     </footer>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
     <script src="js/main.js"></script>
 
   </body>

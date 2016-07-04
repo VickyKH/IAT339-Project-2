@@ -97,8 +97,14 @@ header {
 }
 
 .header-site .nav a.selected {
-  color: #79C9AD;
-  transform: scale(1.2);
+  background: #79C9AD;
+  transform: none;
+  color: #FFF;
+}
+
+.header-site .nav a:hover, .header-site .nav a:focus {
+  text-decoration: none;
+  transform: none;
 }
 
 .headerOpen {
@@ -142,8 +148,19 @@ nav.isOpen [class*="navlink"] {
     flex-flow: row nowrap;
   }
 
+  .nav .logo:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+
   .header-site .nav a {
     text-align: center;
+  }
+
+  .header-site .nav a.selected {
+    color: #79C9AD;
+    background: none;
+    transform: scale(1.2);
   }
 
   .nav .logo {
