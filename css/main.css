@@ -9,15 +9,15 @@ body {
   font-family: 'Didact Gothic', 'Verdana', sans-serif;
   padding: 0;
   margin: 0;
-  font-size: 1.15rem;
+  font-size: 18.5px; font-size: 1.15rem;
   background: url("bkg/bkg-confetti.png") fixed;
   width: 100%;
   border: 1px solid #DDD;
 }
 
 section:not([id]) {
-  margin: 1em 0;
-  padding: 1em 0;
+  margin: 16px 0; margin: 1em 0;
+  padding: 16px 0; padding: 1em 0;
 /**  border-bottom: 1px solid #DDD;**/
 }
 
@@ -28,7 +28,7 @@ section:not([id]) {
 
 section h2 {
   margin-top: 0;
-  margin-bottom: 0.5em;
+  margin-bottom: 8px; margin-bottom: 0.5em;
 }
 
 section h3 {
@@ -41,20 +41,20 @@ section p {
 
 section code {
   background-color: #EEE;
-  padding: 0.5em 0.75em;
+  padding: 8px 12px; padding: 0.5em 0.75em;
   display: block;
 }
 
 ul.citations {
-  margin-left: 0.25em;
-  padding-left: 0.25em;
+  margin-left: 4px; margin-left: 0.25em;
+  padding-left: 4px; padding-left: 0.25em;
 }
 
 ul.citations li {
   list-style-type: none;
   margin-left: 0;
   padding-left: 0;
-  padding-bottom: 1em;
+  padding-bottom: 16px; padding-bottom: 1em;
 }
 
 ul.citations li strong {
@@ -66,10 +66,6 @@ cite {
   font-style: normal;
 }
 
-section {
-  clear: left;
-}
-
 /*
   INTERACTIVE ELEMENTS -------------------
 */
@@ -78,7 +74,7 @@ section {
 
 [class^='button'], button {
   font-family: 'Permanent Marker', cursive;
-  font-size: 1.5rem;
+  font-size: 28px; font-size: 1.75 rem;
   display: inline-block;
   padding: 0.15em 0.75em;
   margin: 0.5em 0.5em 0.5em 0;
@@ -177,7 +173,7 @@ form {
 form label {
   display: block;
   text-align: center;
-  font-size: 1rem;
+  font-size: 16px; font-size: 1rem;
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 1em;
@@ -187,7 +183,7 @@ form label {
 input, textarea, select {
   display: block;
   font-family: 'Didact Gothic', 'Verdana', sans-serif;
-  font-size: 1.25rem;
+  font-size: 24px; font-size: 1.25rem;
   padding: 0.5em;
   width: 100%;
   margin-bottom: 1em;
@@ -222,7 +218,7 @@ ul li, ol li {
   border: 1px solid #FFF;
   background-color: #DDD;
   vertical-align: middle;
-  height: 5rem;
+  height: 80px; height: 5rem;
   padding: 1em;
 }
 
@@ -274,9 +270,9 @@ img {
 h1 {
   font-family: 'Bangers', 'Arial', sans-serif;
   letter-spacing: 0.15em;
-  font-size: 2rem;
+  font-size: 32px; font-size: 2rem;
   display: inline-block;
-  margin: 0.5em auto;
+  margin: 2em auto 0.5em auto;
   padding: 0.25em 0.5em;
   background-color: #EF4B6D;
   color:#FFF ;
@@ -285,7 +281,7 @@ h1 {
 .section-head {
   font-family: 'Bangers', 'Arial', sans-serif;
   letter-spacing: 0.15em;
-  font-size: 1.5rem;
+  font-size: 24px; font-size: 1.5rem;
   display: inline-block;
   margin: 0.5em auto;
   vertical-align: center;
@@ -302,7 +298,7 @@ h2 {
 .bolderH2 {
   font-family: 'Bangers', 'Arial', sans-serif;
   letter-spacing: 0.15em;
-  font-size: 2rem;
+  font-size: 32px; font-size: 2rem;
   display: inline-block;
   margin: 0.5em auto;
   padding: 0.25em 0.5em;
@@ -314,25 +310,25 @@ h2 {
 h3 {
   font-family: 'Permanent Marker', cursive;
   letter-spacing: 0.1em;
-  font-size: 1.2rem;
+  font-size: 19.2px; font-size: 1.2rem;
   margin: 0.5em 0;
 }
 
 table {
-  margin: 1.5rem 0;
+  margin: 24px 0; margin: 1.5rem 0;
   width: 100%;
   border-collapse: collapse;
 }
 
 table tr th {
   background-color: #CCC;
-  padding: 1rem;
+  padding: 16px; padding: 1rem;
   color: #FFF;
 }
 
 table tr td {
   vertical-align: middle;
-  padding: 1rem;
+  padding: 16px; padding: 1rem;
   border: 1px solid #CCC;
   margin: 0;
 }
@@ -359,13 +355,14 @@ a.delete {
 }
 
 .icon {
-  height: 1.5rem;
+  height: 24px; height: 1.5rem;
   width: auto;
 }
 
-main {
-  background: #FFF;
-  padding: 10rem 2rem 2rem 2rem;
+.main {
+  background: #FFFFFF;
+  padding-bottom: 32px; padding-bottom: 2rem;
+  transition: margin ease-out 0.5s;
 }
 
 
@@ -373,11 +370,11 @@ main {
   margin-bottom: 1em;
 }
 
-.product {
-  padding: 0.25em;
+div.product {
+/*  padding: 16px; padding: 1rem;*/
 }
 
-.product a {
+div.product a {
   border: none;
 }
 
@@ -409,7 +406,8 @@ p.subtitle {
   color:#000;
   /*background-color: rgba(255,255,255,0.8);*/
   background-color: rgb(255,255,255);
-  border: 5px solid #EF4B6D; /*#79C9AD;*/
+  border: 6px; /** IE8 **/
+  border: 0.375em solid #EF4B6D; /*#79C9AD;*/
   -webkit-border-radius:0.75em;
   -moz-border-radius:0.75em;
   border-radius:0.75em;
@@ -431,13 +429,18 @@ p.subtitle {
   width:0;
 }
 
+/** Overlay box **/
+
+[class^='overlay'] {
+  background: #333333; /** IE8 **/
+  background: rgba(5,5,5,0.7);
+}
+
 .overlay-box {
-  background-color: rgba(5,5,5,0.7);
   padding: 0.5em;
 }
 
 .overlay-circle {
-  background-color: rgba(5,5,5,0.7);
   padding: 3em;
   border-radius: 50%;
   width: auto;
@@ -450,12 +453,13 @@ p.subtitle {
 /*** Homepage ***/
 
 .announcement {
-  background-image: url("http://s3.amazonaws.com/spoonflower/public/design_thumbnails/0423/2766/rrpickle_pattern_repeat_shop_preview.png");
+  background: url("http://s3.amazonaws.com/spoonflower/public/design_thumbnails/0423/2766/rrpickle_pattern_repeat_shop_preview.png")
+              ;
   background-position: center;
   background-size: cover;
   text-align: center;
   padding: 5em 0;
-  font-size: 1.5rem;
+  font-size: 24px; font-size: 1.5rem;
 }
 
 .announcement h2 {
@@ -486,24 +490,26 @@ p.subtitle {
 }
 
 .front-box h2 {
-  margin: 0;
+  margin: 2em 0 0;
   background: #333;
   display: inline-block;
-  font-size: 1.25rem;
+  font-size: 20px; font-size: 1.25rem;
   padding: 0.25em 0.5em;
 }
 
 .front-box a {
-  color: #333;
+  color: #FFF
 }
 
-.front-box a:hover {
-  color: #FFF;
+.front-box h3:hover {
+  color: #EF4B6D;
 }
 
 .front-box h3 {
-  font-size: 2rem;
+  font-size: 32px; font-size: 2rem;
   margin: 0;
+  color: #FFF;
+  transition: color ease-out 0.5s;
 }
 
 #announce-diy {
@@ -569,7 +575,7 @@ p.price {
   padding: 1em;
   /*background: #DDD;*/
   /*background-image: url(../img/dinoDonutBG.jpg);*/
-  background-image: url(https://s-media-cache-ak0.pinimg.com/564x/d0/5a/2b/d05a2b28240b46468b90a0d88345aec9.jpg);
+  background: url(https://s-media-cache-ak0.pinimg.com/564x/d0/5a/2b/d05a2b28240b46468b90a0d88345aec9.jpg);
   /*text-align: center;*/
 }
 
@@ -680,20 +686,37 @@ section.cart .quantity, section.cart .price {
   flex: 16.66%;
 }
 
-div.checkout {
+a.checkout {
+  text-align: center;
+  display: block;
+  width: 33.32%;
+  margin-left: 65%;
 }
 
-section.nomargin {
-  margin: 0;
+.relative {
+  position: relative;
+  width: 100%;
+}
+
+.relative > header.header-site {
+  position: absolute;
+  z-index: 5;
 }
 
 /**  Media Queries  */
 
 @media only screen and (max-width: 35em) {
 
-section.cart header {
+section.cart header > * {
     display: none;
   }
+
+  section.cart header:first-child {
+      display: block;
+      width: 100%;
+      padding: 0.5em 1em;
+      font-size: 1.2rem;
+    }
 
   section.cart footer > * {
     flex: 50%;
@@ -735,10 +758,12 @@ section.cart header {
   }
   section.cart .quantity::before {content:"Quantity";}
   section.cart .price::before {content:"Price";}
-}
 
+  a.checkout {
+    width: 100%;
+    margin: 0;
+  }
 
-@media (max-width: 35em) {
   .search-options {
     position: absolute;
     width: 100%;
@@ -746,17 +771,11 @@ section.cart header {
 
 }
 
-
-@media only screen and (min-width: 35em) {
-  .search-options {
-    position: relative;
-  }
-
-}
+/* Smaller screens */
 
 @media only screen and (max-width: 48em) {
-  main {
-    padding: 4rem 0 2rem 0;
+  .main {
+    padding: 0;
   }
 
   .announcement .overlay-circle {
@@ -776,6 +795,13 @@ section.cart header {
 
   .front-box {
     height: 10em;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    margin: 0.5em 0 0 0;
+    color: #EF4B6D;
+    background: none;
   }
 }
 

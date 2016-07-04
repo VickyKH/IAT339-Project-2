@@ -58,3 +58,26 @@ time {
 .blog-bg {
 	background-color: white;
 }
+
+.border-box {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4rem;
+}
+
+.border-box div {
+	padding: 1em;
+}
+
+.border-box p, .border-box address {
+	margin: 0;
+	padding: 0;
+}
+
+@media (max-width: 48em) {
+	.border-box, .border-box div {
+		width: 100%;
+		margin: 0;
+	}
+}

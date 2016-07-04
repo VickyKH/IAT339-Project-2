@@ -8,6 +8,7 @@
 
 .About_List {
 	list-style: none;
+	display: block;
 }
 
 .About_List h3 {
@@ -33,4 +34,101 @@ iframe {
 	color: #EF4B6D;
 	text-align: center;
 	font-size: 0.75em;
+}
+
+article {
+	margin: 2em 0;
+	padding: 1em;
+}
+
+/*width: 100%; /*100% of the article's (wrapper) width; will adjust with article*/
+
+.post {
+	background-image: url(https://s-media-cache-ak0.pinimg.com/564x/d0/5a/2b/d05a2b28240b46468b90a0d88345aec9.jpg);
+	padding: 1.25em;
+	margin-bottom: 1.25em;
+	text-align: center;
+}
+
+.post h2 {
+	font-family: 'Bangers', 'Arial', sans-serif;
+	letter-spacing: 0.15em;
+	font-size: 2rem;
+	display: inline-block;
+	margin: 0.5em auto;
+	padding: 0.25em 0.5em;
+	background-color: #EF4B6D;
+	color:#FFF ;
+}
+
+.post p {
+	padding: 0 1.5em 1em 1.5em;
+	text-align: left;
+	/*background-color: white;*/
+}
+
+/*last paragraph remove margin at bottom*/
+.post p:last-child {
+	margin-bottom: 0;
+}
+
+.blog-bg {
+	background: #FFFFFF;
+	margin: 16px 16px 0 16px; margin: 1rem 1rem 0 1rem;
+	padding: 32px; padding: 2rem;
+}
+
+.border-box {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4rem;
+}
+
+.border-box div {
+	padding: 1em;
+}
+
+.border-box p, .border-box address {
+	margin: 0;
+	padding: 0;
+}
+
+.blog-bg figure {
+	padding: 1em;
+}
+
+article footer {
+	background: #333;
+	color: #FFF;
+	margin: 0 1rem 1rem 1rem;
+	padding: 2rem;
+	text-align: left;
+}
+
+@media (max-width: 48em) {
+	.border-box, .border-box div {
+		width: 100%;
+		margin: 0;
+	}
+
+	.blog-bg {
+		padding: 0;
+		margin: 0;
+	}
+
+	article footer {
+		margin: 0;
+		padding: 1rem;
+		background: rgba(0,0,0,0.5);
+	}
+
+	.post {
+		padding: 0;
+	}
+
+	.About_List li {
+		display: inline-block;
+	}
+
 }

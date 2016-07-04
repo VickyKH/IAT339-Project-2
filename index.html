@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Dirty Mouth Donuts: Cute As Hell // Home</title>
 
     <!-- CSS -->
     <link href="css/header.css" rel="stylesheet">
@@ -19,16 +19,18 @@
 
   <body>
 
-    <header class="header-site">
-      <div class="wrapper">
-        <nav class="isOpen">
-          <a href="index.html" class="logo">
-            <img src="img/logo-sub.svg" alt="Dirty Mouth Donuts - Cute As Hell">
-          </a>
-          <a href="shop.html" class="navlink navlink-shop">Shop</a>
-          <a href="About.html" class="navlink navlink-about">About</a>
-          <a href="Blog.html" class="navlink navlink-blog">Blog</a>
-          <a href="Contact.html" class="navlink navlink-contact">Contact</a>
+    <header>
+      <div class="header-site">
+        <nav>
+          <div class="nav">
+            <a href="index.html" class="logo">
+              <img src="img/logo-sub.svg" alt="Dirty Mouth Donuts - Cute As Hell">
+            </a>
+            <a href="shop.html" class="navlink navlink-shop">Shop</a>
+            <a href="About.html" class="navlink navlink-about">About</a>
+            <a href="Blog.html" class="navlink navlink-blog">Blog</a>
+            <a href="Contact.html" class="navlink navlink-contact">Contact</a>
+          </div>
         </nav>
         <a href="" class="navlink-menu">Nav</a>
         <a href="cart.html" class="navlink-cart"><img src="img/icons/cart.svg" alt="Cart"></a>
@@ -36,42 +38,46 @@
     </header>
 
     <main>
-      <section class="announcement">
-        <div class="overlay-circle">
-          <h2>
-            Donut of the Month
-            <em>Pickle</em>
-          </h2>
-          <p  class="subtitle">Pucker up for our cucumber.</p>
-          <a href="shop.html" class="button-teal">Shop Now</a>
-        </div>
-      </section>
-
-      <section class="row no-margin">
-          <div class="front-box col-m4" id="announce-diy">
-            <h2>Shop</h2>
-            <h3>DIY Your Donuts</h3>
+      <div class="main headerOpen">
+        <section id="banner">
+          <div class="announcement">
+            <div class="overlay-circle">
+              <h2>
+                Donut of the Month
+                <em>Pickle</em>
+              </h2>
+              <p  class="subtitle">Pucker up for our cucumber.</p>
+              <a href="shop.html" class="button-teal">Shop Now</a>
+            </div>
           </div>
+        </section>
 
-          <div class="front-box col-m4" id="announce-story">
-            <h2>About Us</h2>
-            <a href="About.html"><h3>Our Story</h3></a>
+        <section id="other">
+          <div class="row padding">
+            <div class="front-box col-m4" id="announce-diy">
+              <h2>Shop</h2>
+              <h3>DIY Your Donuts</h3>
+            </div>
+
+            <div class="front-box col-m4" id="announce-story">
+              <h2>About Us</h2>
+              <a href="About.html"><h3>Our Story</h3></a>
+            </div>
+
+            <div class="front-box col-m4" id="announce-blog">
+              <h2>Blog</h2>
+              <a href="Blog.html">
+                <h3>Donut Pride Masquerade</h3>
+              </a>
+            </div>
           </div>
+        </section>
 
-          <div class="front-box col-m4" id="announce-blog">
-            <h2>Blog</h2>
-            <a href="Blog.html">
-              <h3>Donut Pride Masquerade</h3>
-            </a>
-          </div>
-      </section>
-
-
+      </div>
     </main>
 
     <footer>
-      <div class="row wrapper">
-
+      <div class="footer row">
         <address class="col-m4 info">
           <strong>Dirty Mouth Donuts</strong>
           <br>5555 W. Pender Street
@@ -110,6 +116,8 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
     <script src="js/main.js"></script>
 
   </body>

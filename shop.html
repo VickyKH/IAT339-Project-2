@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop</title>
+    <title>Dirty Mouth Donuts: Cute As Hell // Shop</title>
 
     <!-- CSS -->
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
@@ -19,123 +20,124 @@
 
   <body>
 
-    <header class="header-site">
-      <div class="wrapper">
-      <nav class="isOpen">
-        <a href="index.html" class="logo">
-          <img src="img/logo-sub.svg" alt="Dirty Mouth Donuts - Cute As Hell">
-        </a>
+    <header>
+      <div class="header-site">
+        <nav>
+          <div class="nav">
+            <a href="index.html" class="logo">
+              <img src="img/logo-sub.svg" alt="Dirty Mouth Donuts - Cute As Hell">
+            </a>
 
-        <a href="shop.html" class="selected navlink navlink-shop">Shop</a>
-        <a href="About.html" class="navlink navlink-about">About</a>
-        <a href="Blog.html" class="navlink navlink-blog">Blog</a>
-        <a href="Contact.html" class="navlink navlink-contact">Contact</a>
-
-      </nav>
-      <a href="" class="navlink-menu">Nav</a>
-      <a href="cart.html" class="navlink-cart"><img src="img/icons/cart.svg" alt="Cart"></a>
-    </div>
+            <a href="shop.html" class="selected navlink navlink-shop">Shop</a>
+            <a href="About.html" class="navlink navlink-about">About</a>
+            <a href="Blog.html" class="navlink navlink-blog">Blog</a>
+            <a href="Contact.html" class="navlink navlink-contact">Contact</a>
+          </div>
+        </nav>
+        <a href="" class="navlink-menu">Nav</a>
+        <a href="cart.html" class="navlink-cart"><img src="img/icons/cart.svg" alt="Cart"></a>
+      </div>
     </header>
 
     <main>
-      <header class="row">
+      <div class="main headerOpen">
         <h1>Shop</h1>
-<!--
-        <div class="search-options">
-          <div class="">
-            <label>Donut Type</label>
-            <select name="donut-type">
-              <option value="yeast">Yeast</option>
-              <option value="cake">Cake</option>
-              <option value="old_fashioned">Old Fashioned</option>
-              <option value="filled">Filled</option>
-              <option value="crueller">Crueller</option>
-            </select>
+  <!--
+          <div class="search-options">
+            <div class="">
+              <label>Donut Type</label>
+              <select name="donut-type">
+                <option value="yeast">Yeast</option>
+                <option value="cake">Cake</option>
+                <option value="old_fashioned">Old Fashioned</option>
+                <option value="filled">Filled</option>
+                <option value="crueller">Crueller</option>
+              </select>
+            </div>
+
+            <div class="">
+              <label>Sort By</label>
+              <select name="sort">
+                <option value="new">Newest</option>
+                <option value="popular">Popularity</option>
+                <option value="favourite">Favourites</option>
+              </select>
+            </div>
+
           </div>
+          -->
 
-          <div class="">
-            <label>Sort By</label>
-            <select name="sort">
-              <option value="new">Newest</option>
-              <option value="popular">Popularity</option>
-              <option value="favourite">Favourites</option>
-            </select>
-          </div>
+        <div class="gallery">
+          <div class="row padding">
 
-        </div>
-        -->
-      </header>
+            <div class="product col-m3">
+              <a href="donut_pickle.html" title="Pickle Donut">
+                <img src="img/donuts/donut-pickle-before.png" alt="Pickle Donut" class="hover-donut">
+                <p class="name">Pickle</p>
+              </a>
+              <p class="tag-featured">Featured</p>
+            </div>
 
-      <div class="gallery">
-        <div class="row">
+            <div class="product col-m3">
+              <a href="donut_popmarsh.html" title="Popcorn Marshmallow Donut">
+                <img src="img/donuts/donut-popmarsh-before.png" alt="Popcorn Marshmallow Donut" class="hover-donut">
+                <p class="name">Popcorn Marshmallow</p>
+              </a>
+              <p class="tag-new">New</p>
+            </div>
 
-          <div class="product col-m3">
-            <a href="donut_pickle.html" title="Pickle Donut">
-              <img src="img/donuts/donut-pickle-before.png" alt="Pickle Donut" class="hover-donut">
-              <p class="name">Pickle</p>
-            </a>
-            <p class="tag-featured">Featured</p>
-          </div>
+            <div class="product col-m3">
+              <a href="donut_vansoy.html" title="Vanilla Soy Donut">
+                <img src="img/donuts/donut-vansoy-before.png" alt="Vanilla Soy Donut" class="hover-donut">
+                <p class="name">Vanilla Soy Sauce</p>
+              </a>
+              <p class="tag-hot">Hot</p>
+            </div>
 
-          <div class="product col-m3">
-            <a href="donut_popmarsh.html" title="Popcorn Marshmallow Donut">
-              <img src="img/donuts/donut-popmarsh-before.png" alt="Popcorn Marshmallow Donut" class="hover-donut">
-              <p class="name">Popcorn Marshmallow</p>
-            </a>
-            <p class="tag-new">New</p>
-          </div>
+            <div class="product col-m3">
+              <a href="donut.html">
+                <img src="img/donuts/donut-dirtymouth-before.png" alt="Dirty Mouth Donut" class="hover-donut">
+                <p class="name">Dirty Mouth</p>
+              </a>
+            </div>
+          </div> <!--- End of row -->
 
-          <div class="product col-m3">
-            <a href="donut_vansoy.html" title="Vanilla Soy Donut">
-              <img src="img/donuts/donut-vansoy-before.png" alt="Vanilla Soy Donut" class="hover-donut">
-              <p class="name">Vanilla Soy Sauce</p>
-            </a>
-            <p class="tag-hot">Hot</p>
-          </div>
+          <div class="row padding">
+            <div class="product col-m3">
+              <a href="donut.html">
+                <img src="img/donuts/donut-cookie-monster-before.png" alt="Cookie Monster Donut" class="hover-donut">
+                <p class="name">Cookie Monster</p>
+              </a>
+            </div>
 
-          <div class="product col-m3">
-            <a href="donut.html">
-              <img src="img/donuts/donut-dirtymouth-before.png" alt="Dirty Mouth Donut" class="hover-donut">
-              <p class="name">Dirty Mouth</p>
-            </a>
-          </div>
-        </div> <!--- End of row -->
+            <div class="product col-m3">
+              <a href="donut.html">
+                <img src="img/donuts/donut-deadelvis-before.png" alt="Dead Elvis Donut" class="hover-donut">
+                <p class="name">Dead Elvis</p>
+              </a>
+            </div>
 
-        <div class="row">
-          <div class="product col-m3">
-            <a href="donut.html">
-              <img src="img/donuts/donut-cookie-monster-before.png" alt="Cookie Monster Donut" class="hover-donut">
-              <p class="name">Cookie Monster</p>
-            </a>
-          </div>
+            <div class="product col-m3">
+              <a href="donut.html">
+                <img src="img/donuts/donut-fantabulous-before.png" alt="Fantabulous Donut" class="hover-donut">
+                <p class="name">Fantabulous</p>
+              </a>
+            </div>
 
-          <div class="product col-m3">
-            <a href="donut.html">
-              <img src="img/donuts/donut-deadelvis-before.png" alt="Dead Elvis Donut" class="hover-donut">
-              <p class="name">Dead Elvis</p>
-            </a>
-          </div>
+            <div class="product col-m3">
+              <a href="donut.html">
+                <img src="img/donuts/donut-licorice-before.png" alt="Licorice Donut" class="hover-donut">
+                <p class="name">Licorice</p>
+              </a>
+            </div>
+          </div><!-- End of row -->
 
-          <div class="product col-m3">
-            <a href="donut.html">
-              <img src="img/donuts/donut-fantabulous-before.png" alt="Fantabulous Donut" class="hover-donut">
-              <p class="name">Fantabulous</p>
-            </a>
-          </div>
-
-          <div class="product col-m3">
-            <a href="donut.html">
-              <img src="img/donuts/donut-licorice-before.png" alt="Licorice Donut" class="hover-donut">
-              <p class="name">Licorice</p>
-            </a>
-          </div>
-        </div><!-- End of row -->
-
-      </div><!-- End of gallery-->
+        </div><!-- End of gallery-->
+      </div>
     </main>
 
     <footer>
-      <div class="row wrapper">
+      <div class="footer row">
 
         <address class="col-m4 info">
           <strong>Dirty Mouth Donuts</strong>

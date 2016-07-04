@@ -1,26 +1,23 @@
-/* This makes sure that the padding and border are
-included in the total width and height of the element */
+/*********************************
+
+  Grid structure for site
+
+*********************************/
 
 *, *::after, *::before {
   box-sizing: border-box;
 }
 
-/* The columns inside a row are all floating to the left,
-and are therefore taken out of the flow of the page,
-and other elements will be placed as if the columns does not exist.
-To prevent this, we will add a style that clears the flow */
 .row::after {
-	content: "";
-	display: table;
 	clear: both;
+  display: block;
+  content: "";
 }
 
-/* All (*) these columns should be floating to the left,
-and have a padding of 15px */
 [class*="col-"] {
 	float: left;
   /*text-align: center;*/
-  padding: 15px;
+  padding: 0;
 }
 
 .col-m1 {width: 8.33%;}
@@ -36,6 +33,14 @@ and have a padding of 15px */
 .col-m11 {width: 91.66%;}
 .col-m12 {width: 100%;}
 
+.padding {
+  padding: 32px; padding: 2rem;
+}
+
+.padding > * {
+  padding: 16px; padding: 1rem;
+}
+
 @media (max-width: 35em) {
 
   .col-m2 {
@@ -49,6 +54,10 @@ and have a padding of 15px */
 }
 
 @media (max-width: 48em) {
+  .padding, .padding > * {
+    padding: 0;
+  }
+
   .col-m2 {
     width: 50%;
   }
@@ -81,8 +90,19 @@ and have a padding of 15px */
   /** Constrain the contents to the middle **/
   body {
     position: relative;
-    width: 70rem;
+    width: 1120px; width: 70rem;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 100em) {
+
+  /** Switch to a layout that would resize with the screen  **/
+  body {
+    width: 70%;
+    font-size: 120%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }
