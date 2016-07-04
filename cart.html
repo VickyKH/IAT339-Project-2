@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Dirty Mouth Donuts: Cute As Hell // Cart</title>
 
     <!-- CSS -->
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
@@ -18,17 +19,19 @@
   </head>
 
   <body>
-
-    <header class="header-site">
-      <div class="wrapper">
-        <nav class="isOpen">
-          <a href="index.html" class="logo">
-            <img src="img/logo-sub.svg" alt="Dirty Mouth Donuts - Cute As Hell">
-          </a>
-          <a href="shop.html" class="navlink navlink-shop">Shop</a>
-          <a href="About.html" class="navlink navlink-about">About</a>
-          <a href="Blog.html" class="navlink navlink-blog">Blog</a>
-          <a href="Contact.html" class="navlink navlink-contact">Contact</a>
+    <div class="wrapper">
+    <header>
+      <div class="header-site">
+        <nav>
+          <div class="nav">
+            <a href="index.html" class="logo">
+              <img src="img/logo-sub.svg" alt="Dirty Mouth Donuts - Cute As Hell">
+            </a>
+            <a href="shop.html" class="navlink navlink-shop">Shop</a>
+            <a href="About.html" class="navlink navlink-about">About</a>
+            <a href="Blog.html" class="navlink navlink-blog">Blog</a>
+            <a href="Contact.html" class="navlink navlink-contact">Contact</a>
+          </div>
         </nav>
         <a href="" class="navlink-menu">Nav</a>
         <a href="cart.html" class="navlink-cart"><img src="img/icons/cart.svg" alt="Cart"></a>
@@ -36,7 +39,8 @@
     </header>
 
     <main>
-      <h1>Cart</h1>
+      <div class="main headerOpen">
+        <h1>Cart</h1>
 <!--      <div class="row">
         <div class="col-m6"><h2>Item</h2></div>
         <div class="col-m3"><h2>Quantity</h2></div>
@@ -99,11 +103,13 @@
       </table>-->
 
       <section class="cart">
+
         <header>
           <div class="item"><h2>Item</h2></div>
           <div class="quantity"><h2>Quantity</h2></div>
           <div class="price"><h2>Price</h2></div>
         </header>
+
         <div>
           <div class="item">
             <div class="image"><img src="img/donuts/donut-pickle-before.png" alt="Pickle donut icon"></div>
@@ -112,6 +118,7 @@
           <div class="quantity text"><p>2</p></div>
           <div class="price text"><p>$5</p></div>
         </div>
+
         <div>
           <div class="item">
             <div class="image"><img src="img/donuts/donut-popmarsh-before.png" alt="Popcorn Marshmallow"></div>
@@ -123,10 +130,12 @@
           <div class="quantity text"><p>2</p></div>
           <div class="price text"><p>$5</p></div>
         </div>
+
         <footer>
           <div class="total text">Total</div>
           <div class="total text"><p>$15</p></div>
         </footer>
+
         <a href="Billing.html" class="button checkout">Checkout</a>
 
       </section>
@@ -134,7 +143,7 @@
     </main>
 
     <footer>
-      <div class="row wrapper">
+      <div class="row footer">
 
         <address class="col-m4 info">
           <strong>Dirty Mouth Donuts</strong>
@@ -172,8 +181,10 @@
         </div>
       </div>
     </footer>
+  </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
     <script src="js/main.js"></script>
 
   </body>

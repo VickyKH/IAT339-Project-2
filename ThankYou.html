@@ -6,6 +6,7 @@
     <title>Billing Info</title>
 
     <!-- CSS -->
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/Blog.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -19,48 +20,50 @@
   </head>
 
   <body>
-
-    <header class="header-site">
-      <div class="wrapper">
-      <nav class="isOpen">
-        <a href="index.html" class="logo">
-          <img src="img/logo-sub.svg" alt="Dirty Mouth Donuts - Cute As Hell">
-        </a>
-
-        <a href="shop.html" class="navlink navlink-shop" class="selected">Shop</a>
-        <a href="About.html" class="navlink navlink-about">About</a>
-        <a href="Blog.html" class="navlink navlink-blog">Blog</a>
-        <a href="Contact.html" class="navlink navlink-contact">Contact</a>
-
-      </nav>
-      <a href="" class="navlink-menu">Nav</a>
-      <a href="cart.html" class="navlink-cart" title="Cart"><img src="img/icons/cart.svg" alt="Cart"></a>
-    </div>
+<div class="wrapper">
+    <header>
+      <div class="header-site">
+        <nav>
+          <div class="nav">
+            <a href="index.html" class="logo">
+              <img src="img/logo-sub.svg" alt="Dirty Mouth Donuts - Cute As Hell">
+            </a>
+            <a href="shop.html" class="navlink navlink-shop">Shop</a>
+            <a href="About.html" class="navlink navlink-about">About</a>
+            <a href="Blog.html" class="navlink navlink-blog">Blog</a>
+            <a href="Contact.html" class="navlink navlink-contact">Contact</a>
+          </div>
+        </nav>
+        <a href="" class="navlink-menu">Nav</a>
+        <a href="cart.html" class="navlink-cart"><img src="img/icons/cart.svg" alt="Cart"></a>
+      </div>
     </header>
 
     <main>
-      <div class="post border-box">
-        <div class="blog-bg">
-          <h1>Thank you for your order.</h1>
+      <div class="main headerOpen">
 
-          <p>We'll let you know when your order is ready.</p>
+        <div class="post border-box">
+          <div class="blog-bg">
+            <h1>Thank you for your order.</h1>
 
-          <p>To pick up your delicious donuts, visit our store at:<br>
-          <address>Dirty Mouth Donuts<br>
-          5555 W. Pender Street<br>
-          Vancouver, BC V5X 5X5<br>
-          Open Daily 8:30am – 10pm</address></p>
+            <p>We'll let you know when your order is ready.</p>
 
-          <p>Stay dirty. ;)</p>
+            <p>To pick up your delicious donuts, visit our store at:<br>
+            <address>Dirty Mouth Donuts<br>
+            5555 W. Pender Street<br>
+            Vancouver, BC V5X 5X5<br>
+            Open Daily 8:30am – 10pm</address></p>
 
-          <a href="shop.html" class="button">Back</a>
+            <p>Stay dirty. ;)</p>
+
+            <a href="shop.html" class="button">Back</a>
+          </div>
         </div>
       </div>
-
     </main>
 
     <footer>
-      <div class="row wrapper">
+      <div class="row footer">
 
         <address class="col-m4 info">
           <strong>Dirty Mouth Donuts</strong>
@@ -98,8 +101,10 @@
         </div>
       </div>
     </footer>
+  </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.js"></script>
     <script src="js/main.js"></script>
 
   </body>

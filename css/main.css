@@ -11,7 +11,7 @@ body {
   margin: 0;
   font-size: 18.5px; font-size: 1.15rem;
   background: url("bkg/bkg-confetti.png") fixed;
-  width: 100%;
+  width: 100
   border: 1px solid #DDD;
 }
 
@@ -629,6 +629,7 @@ section.cart {
   display: flex;
   flex-direction: column;
   width: 100%;
+  padding: 2rem;
 }
 
 section.cart footer {
@@ -639,7 +640,7 @@ section.cart footer {
 }
 
 section.cart footer > * {
-  background: #AAA;
+  background: #BBB;
   color: #FFF;
   font-weight: bold;
   flex: 16.66% 0;
@@ -647,7 +648,7 @@ section.cart footer > * {
 }
 
 section.cart header{
-  background: #AAA;
+  background: #BBB;
   color: #FFF;
   font-weight: bold;
   padding: 1em;
@@ -675,6 +676,7 @@ section.cart .item {
 
 section.cart .item .image {
   width: 40%;
+  padding: 0 1em;
 }
 
 section.cart .item .name {
@@ -690,7 +692,8 @@ a.checkout {
   text-align: center;
   display: block;
   width: 33.32%;
-  margin-left: 65%;
+  margin-top: 1em;
+  margin-left: 66%;
 }
 
 .relative {
@@ -796,6 +799,10 @@ section.cart header > * {
   .front-box {
     height: 10em;
     margin-bottom: 1rem;
+  }
+
+  .reviews {
+    text-align: center;
   }
 
   h1 {

@@ -97,8 +97,8 @@ header {
 }
 
 .header-site .nav a.selected {
-  background-color: #79C9AD;
-  color: #FFF;
+  color: #79C9AD;
+  transform: scale(1.2);
 }
 
 .headerOpen {
@@ -245,4 +245,5 @@ nav.isOpen [class*="navlink"] {
 
 address {
   font-size: 1.25em;
+  margin-bottom: 1em;
 }
